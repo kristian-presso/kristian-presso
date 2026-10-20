@@ -1,6 +1,9 @@
 import os, html, sys
 from playwright.sync_api import sync_playwright
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import finish  # noqa: E402
+
 OUT = os.path.dirname(os.path.abspath(__file__))
 e = html.escape
 
@@ -247,7 +250,12 @@ if __name__ == "__main__":
             open(os.path.join(OUT, k + ".html"), "w").write(h)
             pg.goto("file://" + os.path.join(OUT, k + ".html"))
             pg.wait_for_load_state("networkidle"); pg.wait_for_timeout(400)
-            pg.screenshot(path=os.path.join(OUT, k + ".png"))
+            png = os.path.join(OUT, k + ".png")
+            pg.screenshot(path=png)
+            # Quantise and write the card-look tag here, not as a separate step someone
+            # can forget: an untagged card is refused by the pre-publish review and held
+            # in drafts by the link sentinel (20/10/2026, the whole week-43 rhythm).
+            finish.main([png, png])
             sh = pg.evaluate("document.documentElement.scrollHeight")
             print(k, "overflow" if sh > 1350 else "ok", sh)
         br.close()
