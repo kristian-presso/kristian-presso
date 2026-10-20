@@ -88,13 +88,13 @@ pre.snap .warn{background:var(--hi);color:#000;font-weight:600}
 .eq .t.r{background:var(--acc);color:#fff}.eq .t.r span{color:#e8f0dc}
 """
 
-def page(brand, kick, title, body, sub=""):
+def page(brand, kick, title, body, sub="", url=None):
     b = BRANDS[brand]
     vars_ = f"--bg:{b['bg']};--ink:{b['ink']};--acc:{b['acc']};--hi:{b['hi']};--soft:{b['soft']};--ok:{b['ok']}"
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>:root{{{vars_}}}{CSS}</style></head>
 <body><div class="bar"></div><div class="kick">{e(kick)}</div><h1>{title}</h1>{f'<div class="sub">{sub}</div>' if sub else ''}
 <div class="main">{body}</div>
-<div class="foot"><span>{e(b['url'])}</span><b>{e(b['name'])}</b></div></body></html>"""
+<div class="foot"><span>{e(url or b['url'])}</span><b>{e(b['name'])}</b></div></body></html>"""
 
 def panels(items):
     out = '<div class="grid">'
@@ -123,6 +123,15 @@ def myths(rows):
     return "".join(f'<div class="myth"><div class="m"><span class="lab">MYTH</span><s>{m}</s></div><div class="f"><span class="lab">FACT</span>{f}</div></div>' for m, f in rows)
 
 CARDS = {}
+
+# One-off launch card (20/10/2026): the /prompts builder, outside the weekly rhythm.
+CARDS["pe-launch-prompts"] = page("pe", "New in the toolkit", "Same event. <em>Two first messages.</em>", ba(
+  ["A blank chat box and a vague idea", "\"Create an event\" and twelve follow-up questions", "A price or a venue guessed, then corrected", "Not sure the connector is even on", "Twenty minutes to get one event right"],
+  ["Pick the job: event, tickets, agenda, publish, door", "Fill in only the details that change", "Open the finished prompt in Claude", "It checks the connector first, and asks before it guesses", "Nothing to install, nothing stored"],
+  "The fastest way to learn to prompt is a good prompt <em>with your own event in it.</em>",
+  bh="The blank box", ah="The prompt builder"),
+  sub="A prompt builder for running your event from Claude: nine jobs, a few boxes each, one click to open.",
+  url="presso.events/prompts")
 
 # ---------------- Presso Events: check-in from your phone ----------------
 CARDS["pe-1-door"] = page("pe", "The door, explained", "Check-in with <em>nothing to download</em>", panels([
