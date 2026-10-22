@@ -12,4 +12,6 @@ Weekly LinkedIn cards for Presso Events and Corey (and the format used for Krist
 - `carousel.py` renders a carousel in the same look: one 1080x1350 PDF page per slide, plus `<key>-cover.png` (slide one at 2160x2700, finished and look-tagged) for the Buffer document thumbnail. Needs Playwright and pypdf.
 - Slide one has to work alone (most people never swipe), one idea per slide, and no URL, logo or call to action on any slide.
 - In Buffer the post carries a `document` asset (PDF url, title, cover as `thumbnailUrl`). The pre-publish review only inspects `image` assets, so a document post passes it.
-- First run, week 43: both myth-vs-fact posts (Saturday 24/10/2026), Presso Events and Corey.
+- Two looks. Rhythm (Presso Events, Corey): the myth is a speech bubble, the scene is drawn, the fact is a caption box. Comic (Kristian): his strip look, one panel per slide, with the two robots.
+- `scenes.py` holds the drawings as hand-written SVG, coloured by the slide's brand variables, so a scene renders identically every time. Objects only for Presso Events and Corey (no invented mascot); the robots are Kristian's existing characters.
+- Done so far: both week-43 myth-vs-fact posts (24/10/2026) and Kristian's pushback post (26/10/2026, `assets/social/kristian/`).
