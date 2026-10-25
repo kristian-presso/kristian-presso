@@ -7,6 +7,7 @@ Ten years in enterprise B2B taught me that a clever system is worth nothing unti
 **What I build**
 
 - 🧰 [**claude-skills**](https://github.com/kristian-presso/claude-skills) - 21 Claude skills in five plugins: MCP servers and agent security, outbound sales, AI search visibility, running a UK company, and the operator discipline that stops an agent doing two hours of good work on the wrong brief. Each one beats plain Claude in evals.
+- 🛫 [**connector-preflight**](https://github.com/PressoNetwork/connector-preflight) - check an MCP server against Claude's connector directory rules before you submit: the OAuth discovery chain, tool annotations and the review criteria, each failure with its fix and its source. CLI, GitHub Action and Claude Code plugin.
 - 🤖 **MCP servers in production** - for event ticketing, home search and an AI co-founder, with real users, real payments, OAuth and approval gates on anything public, costly or irreversible.
 - ✍️ [**Guides**](https://kristianpapadakis.com/guides) - how it is built: tool design, agent memory, approval gates, auth for agents, multi-agent orchestration with Claude Code.
 
