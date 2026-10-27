@@ -1,0 +1,71 @@
+{
+ "key": "pe-2026-w44-3-beforeafter",
+ "brand": "pe",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Same lunch break, two run sheets",
+   "title": "A time and a room is **not a plan.**",
+   "sub": "What attendees get at 13:00, and what they could get instead.",
+   "mood": "worried",
+   "say": "13:00 Lunch and networking. Atrium.",
+   "props": [
+    "🥪",
+    "☕"
+   ]
+  },
+  {
+   "type": "versus",
+   "title": "Before vs after",
+   "left": {
+    "label": "BEFORE",
+    "mood": "worried",
+    "text": "Nobody knows who's there. Nobody has a first line."
+   },
+   "right": {
+    "label": "AFTER",
+    "mood": "grin",
+    "pose": "cheer",
+    "text": "Who's coming, shown before the day."
+   }
+  },
+  {
+   "type": "panel",
+   "label": "After: who's coming",
+   "caption": "Roles and industries are enough. Name or anonymous: your choice.",
+   "mood": "happy",
+   "pose": "point",
+   "say": "Hide your name and you see roles, not names. Fair's fair.",
+   "props": [
+    "🪪"
+   ]
+  },
+  {
+   "type": "panel",
+   "label": "After: a job for the break",
+   "caption": "Give people a reason to walk up to a stranger.",
+   "mood": "grin",
+   "say": "Find someone from another industry. Ask about their worst event.",
+   "props": [
+    "🤝"
+   ]
+  },
+  {
+   "type": "panel",
+   "label": "After: where it lives",
+   "caption": "All of it on the link in the ticket email. **Nothing to install.**",
+   "mood": "happy",
+   "pose": "wave",
+   "props": [
+    "🎟️",
+    "📧"
+   ]
+  },
+  {
+   "type": "moral",
+   "text": "The fix isn't more time. It's information.",
+   "mood": "smug",
+   "save": "💾 Save this for your next run sheet"
+  }
+ ]
+}

@@ -15,3 +15,12 @@ Weekly LinkedIn cards for Presso Events and Corey (and the format used for Krist
 - Two looks. Rhythm (Presso Events, Corey): the myth is a speech bubble, the scene is drawn, the fact is a caption box. Comic (Kristian): his strip look, one panel per slide, with the two robots.
 - `scenes.py` holds the drawings as hand-written SVG, coloured by the slide's brand variables, so a scene renders identically every time. Objects only for Presso Events and Corey (no invented mascot); the robots are Kristian's existing characters.
 - Done so far: both week-43 myth-vs-fact posts (24/10/2026) and Kristian's pushback post (26/10/2026, `assets/social/kristian/`).
+
+## Comic carousels (the default from 27/10/2026)
+
+Every post is a hook, a lesson, a laugh and a picture that teaches (operator `skills/_lib/social-engaging-format.md`). The text cards in `make.py` failed that test for a week, so the weekly rhythm now draws a comic carousel per post.
+
+- `cast.py` draws the mascots as SVG, with moods and poses: Corey's green sprout, Presso Events' blue phone, Kristian's robots.
+- `comic.py` turns a JSON spec (`specs/<key>.json`) into `out/<key>/<key>.pdf` (the LinkedIn document), `cover.png` and `slide-<n>.png` (for X, up to 4 images), all tagged `card-look:Comic`. `python3 comic.py --check specs/x.json` validates without rendering. The docstring lists the slide types.
+- Slide one is the whole claim; the cast acts the story out; no URL, logo or call to action on a slide.
+- Copy the PDF and cover to `assets/social/<brand>/<yyyy-mm>-w<week>-<n>-<format>-comic.pdf` and `-comic-cover.png`, commit on this branch, and post the PDF as a Buffer document asset with the cover as `thumbnailUrl`.

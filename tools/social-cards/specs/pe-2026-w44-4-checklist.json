@@ -1,0 +1,59 @@
+{
+ "key": "pe-2026-w44-4-checklist",
+ "brand": "pe",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Run sheet audit",
+   "title": "Search your run sheet for **\"networking\"**",
+   "sub": "Then ask three questions of every line you find.",
+   "mood": "think",
+   "say": "Ctrl+F: networking",
+   "props": [
+    "📋",
+    "🔍"
+   ]
+  },
+  {
+   "type": "list",
+   "label": "Three questions per line",
+   "mood": "happy",
+   "pose": "point",
+   "items": [
+    {
+     "emoji": "👀",
+     "title": "Who is in the room?",
+     "text": "If they can't find out before, they spend the break finding out."
+    },
+    {
+     "emoji": "💬",
+     "title": "What is the first line?",
+     "text": "A prompt, a question, a reason. Borrowed words beat invented ones."
+    },
+    {
+     "emoji": "📍",
+     "title": "Where does it live?",
+     "text": "\"An app to install\" means about a quarter of the room sees it."
+    }
+   ]
+  },
+  {
+   "type": "panel",
+   "label": "No answers?",
+   "caption": "A line with no answers is a coffee break. That's fine. Call it one.",
+   "mood": "happy",
+   "pose": "shrug",
+   "say": "Just stop measuring it as networking.",
+   "props": [
+    "☕"
+   ]
+  },
+  {
+   "type": "moral",
+   "text": "The coffee queue: the only networking format with 100% adoption.",
+   "mood": "grin",
+   "pose": "cheer",
+   "save": "💾 Save this for your next run sheet"
+  }
+ ]
+}

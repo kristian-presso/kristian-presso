@@ -1,0 +1,67 @@
+{
+ "key": "co-2026-w44-4-checklist",
+ "brand": "co",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Your first Claude skill",
+   "title": "What to write down, **once.**",
+   "sub": "Save this before you next retype the same thing into Claude.",
+   "mood": "think",
+   "say": "Haven't I explained this before?",
+   "props": [
+    "📝"
+   ]
+  },
+  {
+   "type": "list",
+   "label": "Write these down",
+   "mood": "happy",
+   "pose": "point",
+   "items": [
+    {
+     "emoji": "🔁",
+     "title": "What you retype",
+     "text": "Which repo owns which ticket. Your test command."
+    },
+    {
+     "emoji": "🧯",
+     "title": "Which error means what",
+     "text": "\"Check the fixture\", not \"check the code\"."
+    },
+    {
+     "emoji": "🏠",
+     "title": "Your house rules",
+     "text": "What a new hire gets wrong in week one."
+    },
+    {
+     "emoji": "🗂️",
+     "title": "Keep it in a repo",
+     "text": "Versioned, diffable, pull-requestable."
+    },
+    {
+     "emoji": "📚",
+     "title": "Add each lesson",
+     "text": "Write down why you were wrong. Once."
+    }
+   ]
+  },
+  {
+   "type": "panel",
+   "label": "Where it lives today",
+   "caption": "You've already written most of this down. Probably in your own head.",
+   "mood": "smug",
+   "say": "Which forgets everything when the chat ends.",
+   "props": [
+    "🧠"
+   ]
+  },
+  {
+   "type": "moral",
+   "text": "A skill is that knowledge, outside your head.",
+   "mood": "grin",
+   "pose": "cheer",
+   "save": "💾 Save this for your first skill"
+  }
+ ]
+}

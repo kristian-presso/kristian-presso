@@ -1,0 +1,54 @@
+{
+ "key": "co-2026-w44-5-question",
+ "brand": "co",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "A thought experiment",
+   "title": "Ship it, **or stop?**",
+   "sub": "Production throws one error. Your laptop throws a different one.",
+   "mood": "think",
+   "say": "Same neighbourhood. The fix is right there...",
+   "props": [
+    "🚢"
+   ]
+  },
+  {
+   "type": "panel",
+   "label": "What most of us do",
+   "caption": "A nearby error feels like confirmation. So we ship.",
+   "mood": "grin",
+   "pose": "cheer",
+   "say": "Ship it!",
+   "props": [
+    "🚀"
+   ]
+  },
+  {
+   "type": "panel",
+   "label": "What I did",
+   "caption": "I shipped. Wrong twice over. It looked done for about a day.",
+   "mood": "worried",
+   "say": "In my defence, CI was very green.",
+   "props": [
+    "✅"
+   ]
+  },
+  {
+   "type": "panel",
+   "label": "The rule I keep now",
+   "caption": "The gap between the two errors is the finding. **Stop there.**",
+   "mood": "smug",
+   "pose": "point",
+   "props": [
+    "🛑"
+   ]
+  },
+  {
+   "type": "moral",
+   "text": "What's the most confident wrong fix you've ever shipped?",
+   "mood": "wink",
+   "pose": "wave"
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "key": "co-2026-w44-6-myths",
+ "brand": "co",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Myth vs fact",
+   "title": "5 myths about **Claude skills**",
+   "sub": "All five sound right. Swipe for what a skill actually is.",
+   "mood": "smug",
+   "say": "Spoiler: it's a folder.",
+   "props": [
+    "🧩"
+   ]
+  },
+  {
+   "type": "myth",
+   "myth": "A skill makes Claude smarter.",
+   "fact": "Same Claude. It just stops guessing at what you already wrote down.",
+   "mood": "smug"
+  },
+  {
+   "type": "myth",
+   "myth": "It's a new model, or a fine-tune.",
+   "fact": "It's a folder of markdown files in a GitHub repo.",
+   "mood": "wink"
+  },
+  {
+   "type": "myth",
+   "myth": "A skill checks its own facts.",
+   "fact": "It can't notice its instructions have gone stale.",
+   "mood": "worried"
+  },
+  {
+   "type": "myth",
+   "myth": "A skill stops you being wrong.",
+   "fact": "You only have to write down why you were wrong once.",
+   "mood": "happy"
+  },
+  {
+   "type": "myth",
+   "myth": "You can tell plausible from correct.",
+   "fact": "From the inside they read identically. So the check gets written down.",
+   "mood": "shock"
+  },
+  {
+   "type": "moral",
+   "text": "The smallest trick in AI, and one of the most useful.",
+   "mood": "grin",
+   "pose": "cheer",
+   "save": "💾 Save this for your next skill"
+  }
+ ]
+}

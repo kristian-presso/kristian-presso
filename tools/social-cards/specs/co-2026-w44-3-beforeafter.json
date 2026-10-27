@@ -1,0 +1,66 @@
+{
+ "key": "co-2026-w44-3-beforeafter",
+ "brand": "co",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Same error, two habits",
+   "title": "Green CI. **Wrong fix.**",
+   "sub": "Production said one thing. My laptop said another. I shipped anyway.",
+   "mood": "shock",
+   "say": "invalid byte sequence in UTF-8",
+   "props": [
+    "🐛"
+   ]
+  },
+  {
+   "type": "panel",
+   "label": "Habit 1: close enough",
+   "caption": "I reproduce it locally and get **US-ASCII** instead.",
+   "mood": "think",
+   "say": "Same neighbourhood. Must be the locale.",
+   "props": [
+    "💻"
+   ]
+  },
+  {
+   "type": "panel",
+   "label": "Habit 1: the result",
+   "caption": "I ship a locale fix. CI goes green.",
+   "mood": "grin",
+   "pose": "cheer",
+   "say": "Fixed it!",
+   "props": [
+    "✅"
+   ],
+   "note": "Wrong twice over. It looked done for about a day."
+  },
+  {
+   "type": "panel",
+   "label": "Habit 2: exact match",
+   "caption": "The local repro has to say **UTF-8** too. It doesn't.",
+   "mood": "think",
+   "say": "That gap is the finding, not a footnote.",
+   "props": [
+    "🔍"
+   ]
+  },
+  {
+   "type": "panel",
+   "label": "Habit 2: the fix",
+   "caption": "Find where the byte comes in. Scrub it at that one place.",
+   "mood": "happy",
+   "pose": "point",
+   "say": "Plus a test that writes the exact byte.",
+   "props": [
+    "🧪"
+   ]
+  },
+  {
+   "type": "moral",
+   "text": "Reproduce the error in front of you, not one that resembles it.",
+   "mood": "smug",
+   "save": "💾 Save this for your next bug hunt"
+  }
+ ]
+}

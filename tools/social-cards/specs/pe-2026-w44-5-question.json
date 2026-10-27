@@ -1,0 +1,54 @@
+{
+ "key": "pe-2026-w44-5-question",
+ "brand": "pe",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "A thought experiment",
+   "title": "You came alone. **Who do you walk up to?**",
+   "sub": "Twenty minutes of break. A room full of strangers holding coffee.",
+   "mood": "worried",
+   "say": "So... nice weather for a conference?",
+   "props": [
+    "☕"
+   ]
+  },
+  {
+   "type": "panel",
+   "label": "Run 1",
+   "caption": "Most of us pick whoever is nearest the urn. Or nobody, and answer emails.",
+   "mood": "sad",
+   "say": "I'll just check my inbox. Again.",
+   "props": [
+    "📧"
+   ]
+  },
+  {
+   "type": "panel",
+   "label": "Run 2",
+   "caption": "Before the day you saw who's coming: three heads of events, two venue managers, one from a museum.",
+   "mood": "grin",
+   "pose": "point",
+   "say": "The museum one. Definitely the museum one.",
+   "props": [
+    "🏛️"
+   ]
+  },
+  {
+   "type": "panel",
+   "label": "Why it changes",
+   "caption": "Walking up to the wrong stranger costs ten of your twenty minutes.",
+   "mood": "think",
+   "say": "It was never shyness.",
+   "props": [
+    "⏳"
+   ]
+  },
+  {
+   "type": "moral",
+   "text": "Same room. Same twenty minutes. A completely different break.",
+   "mood": "grin",
+   "pose": "cheer"
+  }
+ ]
+}
