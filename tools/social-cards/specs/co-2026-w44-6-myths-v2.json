@@ -14,31 +14,36 @@
       "type": "myth",
       "myth": "A skill makes Claude smarter.",
       "fact": "Same Claude. It just stops guessing at what you already wrote down.",
-      "mood": "smug"
+      "mood": "smug",
+      "scene": "Corey the sprout wearing a mortarboard graduation cap, standing proudly next to a robot that is still clearly the same robot, just holding a neat open notebook; a cartoon audience squints, unconvinced."
     },
     {
       "type": "myth",
       "myth": "It's a new model, or a fine-tune.",
       "fact": "It's a folder of markdown files in a GitHub repo.",
-      "mood": "wink"
+      "mood": "wink",
+      "scene": "A pair of cartoon scientists in a gleaming high-tech lab, full of glowing tubes, peer in awe through a magnifying glass at the 'secret ingredient' on a pedestal, which turns out to be an ordinary plain paper folder; Corey the sprout stands beside it looking amused."
     },
     {
       "type": "myth",
       "myth": "A skill checks its own facts.",
       "fact": "It can't notice its instructions have gone stale.",
-      "mood": "worried"
+      "mood": "worried",
+      "scene": "Corey the sprout, eyes closed, confidently reading aloud from a very old dusty scroll covered in cobwebs, while behind him the calendar on the wall has many pages torn off and a clock spins fast."
     },
     {
       "type": "myth",
       "myth": "A skill stops you being wrong.",
       "fact": "You only have to write down why you were wrong once.",
-      "mood": "happy"
+      "mood": "happy",
+      "scene": "Corey the sprout trips over a banana peel on a pavement, mid-fall, while carefully holding a small notebook up high to keep it safe; the next banana peel ahead has a little warning cone placed next to it."
     },
     {
       "type": "myth",
       "myth": "You can tell plausible from correct.",
       "fact": "From the inside they read identically. So the check gets written down.",
-      "mood": "shock"
+      "mood": "shock",
+      "scene": "Two identical-looking cartoon cakes on a table, one real and one a painted cardboard prop, with a confused food judge holding a fork between them; Corey the sprout peeks out from under the tablecloth holding a little checklist clipboard."
     },
     {
       "type": "moral",

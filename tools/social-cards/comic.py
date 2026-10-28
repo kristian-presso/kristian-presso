@@ -28,6 +28,7 @@ Slide types (text may use **bold**; nothing else is markup):
   cartoon label?, caption, scene                          a real cartoon panel (draw.py, OpenAI images): the
                                                           scene is the brief, never shown; caption is our words
   panel   label, caption, mood, pose?, say?, props?, note?   one beat of the story
+          (panel and myth take "scene" too: the cartoon fills their picture box instead of the mascot)
   versus  title?, left{label,mood,text}, right{label,mood,text}
   list    label, items[{emoji,title,text?}] (2-5), mood?, pose?
   stat    big, caption, mood, source?
@@ -134,6 +135,9 @@ b{font-weight:900}
 .moral .row{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}.moral .row svg,.vs .pb svg,.stat svg,.listwrap .mascot svg{flex:0 0 auto}
 .save{flex:1;font-size:42px;font-weight:900;background:#fff;border:5px solid var(--ink);box-shadow:8px 8px 0 var(--ink);padding:20px 28px;margin-bottom:30px;max-width:620px;line-height:1.2}
 .cnt{display:flex;justify-content:space-between;margin-top:28px;font-weight:800;font-size:24px;letter-spacing:4px;color:#444}
+.stage.pic{padding:0;background:var(--ink);position:relative;justify-content:flex-start}
+.stage.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%}
+.stage.pic .say{position:relative;margin:24px 24px 0;font-size:40px;align-self:flex-start;max-width:80%}
 .art{position:fixed;inset:0;z-index:-1;background:var(--ink)}
 .art img{width:100%;height:100%;object-fit:cover;object-position:50% 72%}
 body.toon{background-image:none}
@@ -154,6 +158,9 @@ def props(s, side="r"):
 
 
 def stage(brand, s, w=380, side="r"):
+    if s.get("_art"):
+        say = f'<div class="say">{fmt(s["say"])}</div>' if s.get("say") else ""
+        return f'<div class="stage pic"><img src="file://{html.escape(s["_art"])}">{say}</div>'
     say = f'<div class="say">{fmt(s["say"])}</div>' if s.get("say") else ""
     return f'<div class="stage">{say}<div class="who">{char(brand, s, w)}</div>{props(s, side)}</div>'
 
@@ -233,7 +240,8 @@ def validate(spec):
                 errs.append(f"slide {i}: mood {s[k]} not in {sorted(MOODS)}")
         if "pose" in s and s["pose"] not in POSES:
             errs.append(f"slide {i}: pose {s['pose']} not in {sorted(POSES)}")
-        need = {"cover": ["kicker", "title"] + ([] if s.get("scene") else ["mood"]), "panel": ["label", "caption", "mood"],
+        need = {"cover": ["kicker", "title"] + ([] if s.get("scene") else ["mood"]),
+                "panel": ["label", "caption"] + ([] if s.get("scene") else ["mood"]),
                 "cartoon": ["caption", "scene"], "versus": ["left", "right"],
                 "list": ["label", "items"], "stat": ["big", "caption", "mood"], "myth": ["myth", "fact"], "moral": ["text"]}[s["type"]]
         for k in need:

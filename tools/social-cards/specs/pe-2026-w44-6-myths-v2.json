@@ -14,31 +14,36 @@
       "type": "myth",
       "myth": "Put networking on the agenda and people network.",
       "fact": "A slot is a room booking with a hopeful label.",
-      "mood": "smug"
+      "mood": "smug",
+      "scene": "A conference meeting room with a hopeful sign on a stand showing only a heart symbol, and inside, rows of attendees all staring silently at their own phones, not talking; Phoney the blue phone character stands in the doorway, palm on face."
     },
     {
       "type": "myth",
       "myth": "People don't network because they're shy.",
       "fact": "They can't tell which stranger is worth ten of their twenty minutes.",
-      "mood": "think"
+      "mood": "think",
+      "scene": "A crowded conference break: a friendly attendee peers at a sea of strangers through a pair of binoculars, completely unsure who to approach, question marks floating over every head; Phoney the blue phone character sits on their shoulder scratching its head."
     },
     {
       "type": "myth",
       "myth": "A networking app fixes it.",
       "fact": "Without a real push, 20-30% of attendees download one (Nunify, 2025).",
-      "mood": "worried"
+      "mood": "worried",
+      "scene": "A big shiny app download button floats on a stand in a conference hall like a museum exhibit behind a velvet rope, and only a handful of attendees are looking at it while most walk past ignoring it; Phoney the blue phone character waves at them, slightly deflated."
     },
     {
       "type": "myth",
       "myth": "More features win.",
       "fact": "Fewer features everyone sees beat more features a quarter of the room sees.",
-      "mood": "happy"
+      "mood": "happy",
+      "scene": "A ridiculous oversized Swiss army knife with dozens of tools sprouting out of it sits unused on a table, while beside it a single simple coffee mug is being happily used by a whole queue of attendees; Phoney the blue phone character gives a thumbs up next to the mug."
     },
     {
       "type": "myth",
       "myth": "An attendee list is a privacy problem.",
       "fact": "Ticket holders only, objectors left off, anonymous allowed, and symmetric.",
-      "mood": "wink"
+      "mood": "wink",
+      "scene": "A friendly cartoon bouncer, Phoney the blue phone character in a little black suit and earpiece, stands at a velvet rope by a guest list on a stand, letting ticket holders in with a smile while one shady stranger in a trench coat and fake moustache is politely turned away."
     },
     {
       "type": "moral",

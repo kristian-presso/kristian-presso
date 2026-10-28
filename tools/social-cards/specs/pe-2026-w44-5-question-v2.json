@@ -21,11 +21,8 @@
       "label": "Run 2",
       "caption": "Before the day you saw who's coming: three heads of events, two venue managers, one from a museum.",
       "mood": "grin",
-      "pose": "point",
       "say": "The museum one. Definitely the museum one.",
-      "props": [
-        "🏛️"
-      ]
+      "scene": "The same conference attendee as before now walks confidently across a busy networking hall with a coffee in hand, heading straight for a museum curator character standing next to a dinosaur skeleton display; Phoney the blue phone character rides in their top pocket pointing the way."
     },
     {
       "type": "panel",
@@ -33,9 +30,7 @@
       "caption": "Walking up to the wrong stranger costs ten of your twenty minutes.",
       "mood": "think",
       "say": "It was never shyness.",
-      "props": [
-        "⏳"
-      ]
+      "scene": "A giant cartoon hourglass in the middle of a conference break, its sand running low, with a nervous attendee wedged inside a small group of strangers who are talking about something baffling; Phoney the blue phone character holds up a stopwatch with a worried face."
     },
     {
       "type": "moral",

@@ -15,11 +15,8 @@
       "label": "What most of us do",
       "caption": "A nearby error feels like confirmation. So we ship.",
       "mood": "grin",
-      "pose": "cheer",
       "say": "Ship it!",
-      "props": [
-        "🚀"
-      ]
+      "scene": "Corey the sprout, wide-eyed with excitement, slams a big red launch button with both leaf-arms while a small rocket blasts off behind him trailing sparkles, the launch pad still visibly held together with sticky tape."
     },
     {
       "type": "cartoon",
@@ -32,10 +29,7 @@
       "label": "The rule I keep now",
       "caption": "The gap between the two errors is the finding. **Stop there.**",
       "mood": "smug",
-      "pose": "point",
-      "props": [
-        "🛑"
-      ]
+      "scene": "Corey the sprout stands calmly in the middle of a busy road holding up a big round stop paddle like a lollipop lady, while a line of tiny cartoon delivery vans marked only with abstract shapes screech to a halt in front of him, drivers looking surprised."
     },
     {
       "type": "moral",
