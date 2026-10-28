@@ -15,8 +15,16 @@ copy we did not approve. Every word on a slide is ours, set by comic.py in HTML.
 
 CACHED. An existing output is never redrawn: regenerating is where the money goes.
 
-Usage: OPENAI_IMAGE_API_KEY=... draw.py <brand pe|co> "<scene>" <out.png> [--size 1024x1536]
+Usage:
+  OPENAI_IMAGE_API_KEY=... draw.py <brand pe|co> "<scene>" <out.jpg> [--size 1024x1536]
+  OPENAI_IMAGE_API_KEY=... draw.py --missing      # every spec's cartoon slides without art yet
+
+--missing is what the "Draw cartoon art" GitHub Action runs on every push of a spec: it draws
+art/<key>/<n>.jpg for each slide that carries a "scene", at most MAX_PER_RUN images a run, four at
+a time, and the Action commits them back. The weekly writer waits for those files, then renders.
+Art is stored as JPEG (about a tenth of the PNG) because it is committed to the branch.
 """
+import glob, io
 import base64, json, mimetypes, os, sys, urllib.error, urllib.request, uuid
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -83,15 +91,64 @@ def draw(brand, scene, out, size="1024x1536"):
         raise SystemExit(f"draw failed {e.code}: {e.read()[:400].decode(errors='replace')}")
     item = d["data"][0]
     os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
-    if item.get("b64_json"):
-        open(out, "wb").write(base64.b64decode(item["b64_json"]))
+    raw = (base64.b64decode(item["b64_json"]) if item.get("b64_json")
+           else urllib.request.urlopen(item["url"], timeout=120).read())
+    if out.lower().endswith((".jpg", ".jpeg")):
+        from PIL import Image
+        Image.open(io.BytesIO(raw)).convert("RGB").save(out, "JPEG", quality=86, optimize=True)
     else:
-        urllib.request.urlretrieve(item["url"], out)
+        open(out, "wb").write(raw)
     return f"{os.path.getsize(out) // 1024}KB"
+
+
+MAX_PER_RUN = int(os.environ.get("DRAW_MAX_PER_RUN", "60"))
+
+
+def art_path(key, n):
+    return os.path.join(HERE, "art", key, f"{n}.jpg")
+
+
+def missing():
+    """Every (brand, scene, out) a spec asks for that has no art yet."""
+    todo = []
+    for sp in sorted(glob.glob(os.path.join(HERE, "specs", "*.json"))):
+        spec = json.load(open(sp))
+        if spec.get("brand") not in CAST:
+            continue
+        for n, s in enumerate(spec.get("slides") or [], 1):
+            if s.get("scene") and not os.path.exists(art_path(spec["key"], n)):
+                todo.append((spec["brand"], s["scene"], art_path(spec["key"], n)))
+    return todo
+
+
+def draw_missing():
+    from concurrent.futures import ThreadPoolExecutor
+    todo = missing()
+    if len(todo) > MAX_PER_RUN:
+        print(f"draw: {len(todo)} panels asked for, drawing the first {MAX_PER_RUN} (DRAW_MAX_PER_RUN)")
+        todo = todo[:MAX_PER_RUN]
+    fails = []
+
+    def one(t):
+        try:
+            return f"{os.path.relpath(t[2], HERE)} {draw(*t)}"
+        except SystemExit as e:
+            fails.append(f"{os.path.relpath(t[2], HERE)}: {e}")
+            return None
+    with ThreadPoolExecutor(4) as ex:
+        for r in ex.map(one, todo):
+            if r:
+                print("draw:", r)
+    for f in fails:
+        print("draw FAILED:", f)
+    print(f"draw: {len(todo) - len(fails)} drawn, {len(fails)} failed")
+    return 1 if fails else 0
 
 
 if __name__ == "__main__":
     a = sys.argv[1:]
+    if a == ["--missing"]:
+        sys.exit(draw_missing())
     size = "1024x1536"
     if "--size" in a:
         i = a.index("--size"); size = a[i + 1]; del a[i:i + 2]

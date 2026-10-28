@@ -1,0 +1,51 @@
+{
+  "key": "pe-2026-w44-6-myths-v2",
+  "brand": "pe",
+  "slides": [
+    {
+      "type": "cover",
+      "kicker": "Myth vs fact",
+      "title": "5 myths about **event networking**",
+      "sub": "Swipe before you write your next run sheet.",
+      "mood": "smug",
+      "scene": "Phoney the blue phone character as a myth-buster in a white lab coat and safety goggles, standing in a conference networking area, slamming a giant rubber stamp down onto a towering stack of papers so that sheets fly everywhere; attendees in the background duck and stare in surprise."
+    },
+    {
+      "type": "myth",
+      "myth": "Put networking on the agenda and people network.",
+      "fact": "A slot is a room booking with a hopeful label.",
+      "mood": "smug"
+    },
+    {
+      "type": "myth",
+      "myth": "People don't network because they're shy.",
+      "fact": "They can't tell which stranger is worth ten of their twenty minutes.",
+      "mood": "think"
+    },
+    {
+      "type": "myth",
+      "myth": "A networking app fixes it.",
+      "fact": "Without a real push, 20-30% of attendees download one (Nunify, 2025).",
+      "mood": "worried"
+    },
+    {
+      "type": "myth",
+      "myth": "More features win.",
+      "fact": "Fewer features everyone sees beat more features a quarter of the room sees.",
+      "mood": "happy"
+    },
+    {
+      "type": "myth",
+      "myth": "An attendee list is a privacy problem.",
+      "fact": "Ticket holders only, objectors left off, anonymous allowed, and symmetric.",
+      "mood": "wink"
+    },
+    {
+      "type": "moral",
+      "text": "Search your run sheet for \"networking\". We'll wait.",
+      "mood": "smug",
+      "pose": "wave",
+      "save": "💾 Save this for your next run sheet"
+    }
+  ]
+}

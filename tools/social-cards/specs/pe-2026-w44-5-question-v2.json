@@ -1,0 +1,47 @@
+{
+  "key": "pe-2026-w44-5-question-v2",
+  "brand": "pe",
+  "slides": [
+    {
+      "type": "cover",
+      "kicker": "A thought experiment",
+      "title": "You came alone. **Who do you walk up to?**",
+      "sub": "Twenty minutes of break. A room full of strangers holding coffee.",
+      "mood": "worried",
+      "scene": "A conference coffee break in a big hall: tight little clusters of people chatting and laughing, and in the middle one lone attendee holding a coffee cup with a nervous sweat drop, looking left and right; Phoney the blue phone character peeks out of their jacket pocket with a worried face."
+    },
+    {
+      "type": "cartoon",
+      "caption": "Most of us pick whoever is nearest the urn. Or nobody, and answer emails.",
+      "scene": "A conference attendee hides behind a giant tea urn, crouched, staring into Phoney the blue phone character held in their hands; Phoney looks bored, showing a screen of abstract envelope shapes, while the busy networking crowd carries on in the background, oblivious.",
+      "label": "Run 1"
+    },
+    {
+      "type": "panel",
+      "label": "Run 2",
+      "caption": "Before the day you saw who's coming: three heads of events, two venue managers, one from a museum.",
+      "mood": "grin",
+      "pose": "point",
+      "say": "The museum one. Definitely the museum one.",
+      "props": [
+        "🏛️"
+      ]
+    },
+    {
+      "type": "panel",
+      "label": "Why it changes",
+      "caption": "Walking up to the wrong stranger costs ten of your twenty minutes.",
+      "mood": "think",
+      "say": "It was never shyness.",
+      "props": [
+        "⏳"
+      ]
+    },
+    {
+      "type": "moral",
+      "text": "Same room. Same twenty minutes. A completely different break.",
+      "mood": "grin",
+      "pose": "cheer"
+    }
+  ]
+}

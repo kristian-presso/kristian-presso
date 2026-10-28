@@ -1,0 +1,60 @@
+{
+  "key": "co-2026-w44-4-checklist-v2",
+  "brand": "co",
+  "slides": [
+    {
+      "type": "cover",
+      "kicker": "Your first Claude skill",
+      "title": "What to write down, **once.**",
+      "sub": "Save this before you next retype the same thing into Claude.",
+      "mood": "think",
+      "scene": "A developer slumped at a desk, typing the same long explanation into a chat window for what is clearly the fiftieth time; behind them the wall is covered in prison-style tally marks scratched into the plaster. Corey the sprout sits on the desk beside the keyboard, holding up an open notebook with a hopeful, slightly exasperated look."
+    },
+    {
+      "type": "list",
+      "label": "Write these down",
+      "mood": "happy",
+      "pose": "point",
+      "items": [
+        {
+          "emoji": "🔁",
+          "title": "What you retype",
+          "text": "Which repo owns which ticket. Your test command."
+        },
+        {
+          "emoji": "🧯",
+          "title": "Which error means what",
+          "text": "\"Check the fixture\", not \"check the code\"."
+        },
+        {
+          "emoji": "🏠",
+          "title": "Your house rules",
+          "text": "What a new hire gets wrong in week one."
+        },
+        {
+          "emoji": "🗂️",
+          "title": "Keep it in a repo",
+          "text": "Versioned, diffable, pull-requestable."
+        },
+        {
+          "emoji": "📚",
+          "title": "Add each lesson",
+          "text": "Write down why you were wrong. Once."
+        }
+      ]
+    },
+    {
+      "type": "cartoon",
+      "caption": "You've already written most of this down. In your head, which forgets it all when the chat ends.",
+      "scene": "A giant cartoon brain floating above a developer's head is overflowing with sticky notes that flutter out and vanish into thin air as a chat window closes; Corey the sprout leaps between the falling notes trying to catch them all with a butterfly net, cheeks puffed with effort.",
+      "label": "Where it lives today"
+    },
+    {
+      "type": "moral",
+      "text": "A skill is that knowledge, outside your head.",
+      "mood": "grin",
+      "pose": "cheer",
+      "save": "💾 Save this for your first skill"
+    }
+  ]
+}

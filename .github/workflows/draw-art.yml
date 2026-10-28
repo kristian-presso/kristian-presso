@@ -1,0 +1,36 @@
+# Draws the cartoon panels a comic carousel spec asks for (tools/social-cards/draw.py --missing),
+# with OpenAI's image model, and commits them to art/<key>/<n>.jpg on this branch. The weekly
+# social rhythm pushes its specs, waits for the art to land, then renders the carousels.
+# Cached: a panel that exists is never redrawn, so a re-run only pays for what is missing.
+name: Draw cartoon art
+on:
+  push:
+    branches: [social-assets]
+    paths: ["tools/social-cards/specs/**.json"]
+  workflow_dispatch:
+concurrency:
+  group: draw-art
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: social-assets
+      - run: pip install --quiet pillow
+      - name: Draw missing panels
+        env:
+          OPENAI_IMAGE_API_KEY: ${{ secrets.OPENAI_IMAGE_API_KEY }}
+        run: python3 tools/social-cards/draw.py --missing
+      - name: Commit the art
+        if: always()
+        run: |
+          git add tools/social-cards/art
+          git diff --cached --quiet && { echo "nothing new"; exit 0; }
+          git -c user.name="Corey" -c user.email="corey@pressonetwork.com" commit -qm "social-cards: cartoon art"
+          for i in 1 2 3; do git pull -q --rebase origin social-assets && git push -q origin HEAD:social-assets && exit 0; sleep 5; done
+          exit 1

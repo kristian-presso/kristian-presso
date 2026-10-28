@@ -24,6 +24,9 @@ SPEC
 }
 Slide types (text may use **bold**; nothing else is markup):
   cover   kicker, title, sub?, mood, pose?, say?          the whole claim on one slide: most people never swipe
+          (add "scene" and the cover becomes a full-bleed cartoon under the title; mood is then optional)
+  cartoon label?, caption, scene                          a real cartoon panel (draw.py, OpenAI images): the
+                                                          scene is the brief, never shown; caption is our words
   panel   label, caption, mood, pose?, say?, props?, note?   one beat of the story
   versus  title?, left{label,mood,text}, right{label,mood,text}
   list    label, items[{emoji,title,text?}] (2-5), mood?, pose?
@@ -32,6 +35,13 @@ Slide types (text may use **bold**; nothing else is markup):
   moral   text, mood?, pose?, save?                        the line people quote, and "💾 Save this for ..."
 moods: happy grin shock worried smug think sad wink.  poses: none wave point shrug hold cheer.
 props: up to 3 emoji drawn big in the scene (☕ 💻 📱 🎟️ 🐛 📋 ⏰ 🔥 ...).
+
+MIX IT UP (Kristian, 28/10/2026): "use ChatGPT to make these carousel images so they look good and
+like real cartoons, and then mix it up with the infographic types you can make yourself." A good
+carousel alternates: a cartoon cover, then list / stat / versus / myth slides we draw, with one or
+two more cartoon beats, and the moral. Cartoon art lives in art/<key>/<n>.jpg, drawn by the "Draw
+cartoon art" GitHub Action when a spec is pushed (draw.py --missing). A cartoon slide whose art is
+missing stops the render, so nothing ships with a hole in it.
 
 Rules carried from the social standard: no URL, logo or call to action on any slide; every fact
 on a slide is in the post or its source; one idea per slide; the joke is on us or the machine.
@@ -48,7 +58,7 @@ import cast  # noqa: E402
 
 MOODS = {"happy", "grin", "shock", "worried", "smug", "think", "sad", "wink"}
 POSES = {"none", "wave", "point", "shrug", "hold", "cheer"}
-TYPES = {"cover", "panel", "versus", "list", "stat", "myth", "moral"}
+TYPES = {"cover", "panel", "cartoon", "versus", "list", "stat", "myth", "moral"}
 LOOK = "Comic"
 
 THEME = {
@@ -59,7 +69,7 @@ THEME = {
 
 # Max characters per field. A slide that overflows is a slide nobody reads on a phone.
 LIMITS = {"title": 70, "kicker": 40, "sub": 110, "say": 90, "caption": 120, "note": 110, "label": 32,
-          "text": 120, "big": 12, "myth": 70, "fact": 110, "save": 60, "emoji": 4, "source": 90}
+          "text": 120, "big": 12, "myth": 70, "fact": 110, "save": 60, "emoji": 4, "source": 90, "scene": 700}
 
 
 def fmt(s):
@@ -124,6 +134,13 @@ b{font-weight:900}
 .moral .row{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}.moral .row svg,.vs .pb svg,.stat svg,.listwrap .mascot svg{flex:0 0 auto}
 .save{flex:1;font-size:42px;font-weight:900;background:#fff;border:5px solid var(--ink);box-shadow:8px 8px 0 var(--ink);padding:20px 28px;margin-bottom:30px;max-width:620px;line-height:1.2}
 .cnt{display:flex;justify-content:space-between;margin-top:28px;font-weight:800;font-size:24px;letter-spacing:4px;color:#444}
+.art{position:fixed;inset:0;z-index:-1;background:var(--ink)}
+.art img{width:100%;height:100%;object-fit:cover;object-position:50% 72%}
+body.toon{background-image:none}
+body.toon .cnt{margin-top:auto;align-self:stretch}
+body.toon .cnt span{background:#fff;border:4px solid var(--ink);padding:8px 16px;color:var(--ink)}
+body.toon .hdr{box-shadow:12px 12px 0 var(--ink)}
+.toon .cap{font-size:46px}
 """
 
 
@@ -141,8 +158,18 @@ def stage(brand, s, w=380, side="r"):
     return f'<div class="stage">{say}<div class="who">{char(brand, s, w)}</div>{props(s, side)}</div>'
 
 
+def art(s):
+    return f'<div class="art"><img src="file://{html.escape(s["_art"])}"></div>'
+
+
 def slide_body(brand, s):
     t = s["type"]
+    if t == "cover" and s.get("scene"):
+        sub = f'<p>{fmt(s["sub"])}</p>' if s.get("sub") else ""
+        return f'{art(s)}<div class="box hdr"><div class="kick">{fmt(s["kicker"])}</div><h1>{fmt(s["title"])}</h1>{sub}</div>'
+    if t == "cartoon":
+        lab = f'<span class="lab">{fmt(s["label"])}</span>' if s.get("label") else ""
+        return f'{art(s)}<div class="cap">{lab}{fmt(s["caption"])}</div>'
     if t == "cover":
         sub = f'<p>{fmt(s["sub"])}</p>' if s.get("sub") else ""
         return (f'<div class="box hdr"><div class="kick">{fmt(s["kicker"])}</div><h1>{fmt(s["title"])}</h1>{sub}</div>'
@@ -183,7 +210,7 @@ def page(brand, s, n, total, fonts):
     vars_ = ";".join(f"--{k}:{v}" for k, v in th.items())
     swipe = "<span>SWIPE &#8594;</span>" if n == 1 else ""
     return (f'<!doctype html><html><head><meta charset="utf-8"><style>{fonts}:root{{{vars_}}}{CSS}</style></head>'
-            f'<body>{slide_body(brand, s)}<div class="cnt"><span>{n} / {total}</span>{swipe}</div></body></html>')
+            f'<body class="{"toon" if s.get("scene") else ""}">{slide_body(brand, s)}<div class="cnt"><span>{n} / {total}</span>{swipe}</div></body></html>')
 
 
 def validate(spec):
@@ -206,7 +233,8 @@ def validate(spec):
                 errs.append(f"slide {i}: mood {s[k]} not in {sorted(MOODS)}")
         if "pose" in s and s["pose"] not in POSES:
             errs.append(f"slide {i}: pose {s['pose']} not in {sorted(POSES)}")
-        need = {"cover": ["kicker", "title", "mood"], "panel": ["label", "caption", "mood"], "versus": ["left", "right"],
+        need = {"cover": ["kicker", "title"] + ([] if s.get("scene") else ["mood"]), "panel": ["label", "caption", "mood"],
+                "cartoon": ["caption", "scene"], "versus": ["left", "right"],
                 "list": ["label", "items"], "stat": ["big", "caption", "mood"], "myth": ["myth", "fact"], "moral": ["text"]}[s["type"]]
         for k in need:
             if not s.get(k):
@@ -241,6 +269,15 @@ def render(spec_path, br):
     if errs:
         raise SystemExit(f"{spec_path}:\n  " + "\n  ".join(errs))
     key, brand, sl = spec["key"], spec["brand"], spec["slides"]
+    holes = []
+    for n, s in enumerate(sl, 1):
+        if s.get("scene"):
+            s["_art"] = os.path.join(HERE, "art", key, f"{n}.jpg")
+            if not os.path.exists(s["_art"]):
+                holes.append(f"art/{key}/{n}.jpg")
+    if holes:
+        raise SystemExit(f"{key}: cartoon art not drawn yet: {', '.join(holes)} - push the spec and wait "
+                         f"for the Draw cartoon art action, or run draw.py --missing with the key set")
     out = os.path.join(HERE, "out", key)
     os.makedirs(out, exist_ok=True)
     fonts = open(os.path.join(HERE, "fonts.css")).read()

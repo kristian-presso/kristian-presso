@@ -1,0 +1,50 @@
+{
+  "key": "pe-2026-w44-4-checklist-v2",
+  "brand": "pe",
+  "slides": [
+    {
+      "type": "cover",
+      "kicker": "Run sheet audit",
+      "title": "Search your run sheet for **\"networking\"**",
+      "sub": "Then ask three questions of every line you find.",
+      "mood": "think",
+      "scene": "Backstage at a busy conference venue, Phoney the blue phone character holds a huge magnifying glass up to an enormous clipboard run sheet that unrolls down to the floor and across the room like a scroll; Phoney squints with deep detective concentration, wearing a small deerstalker hat."
+    },
+    {
+      "type": "list",
+      "label": "Three questions per line",
+      "mood": "happy",
+      "pose": "point",
+      "items": [
+        {
+          "emoji": "👀",
+          "title": "Who is in the room?",
+          "text": "If they can't find out before, they spend the break finding out."
+        },
+        {
+          "emoji": "💬",
+          "title": "What is the first line?",
+          "text": "A prompt, a question, a reason. Borrowed words beat invented ones."
+        },
+        {
+          "emoji": "📍",
+          "title": "Where does it live?",
+          "text": "\"An app to install\" means about a quarter of the room sees it."
+        }
+      ]
+    },
+    {
+      "type": "cartoon",
+      "caption": "A line with no answers is a coffee break. That's fine. Just call it one.",
+      "scene": "At a conference break, a long happy queue of attendees waits at a big coffee urn, everyone chatting and laughing in the queue itself; Phoney the blue phone character stands behind the urn wearing a barista apron, pouring coffee with a cheerful wink.",
+      "label": "No answers?"
+    },
+    {
+      "type": "moral",
+      "text": "The coffee queue: the only networking format with 100% adoption.",
+      "mood": "grin",
+      "pose": "cheer",
+      "save": "💾 Save this for your next run sheet"
+    }
+  ]
+}
