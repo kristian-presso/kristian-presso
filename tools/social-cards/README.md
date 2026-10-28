@@ -24,3 +24,25 @@ Every post is a hook, a lesson, a laugh and a picture that teaches (operator `sk
 - `comic.py` turns a JSON spec (`specs/<key>.json`) into `out/<key>/<key>.pdf` (the LinkedIn document), `cover.png` and `slide-<n>.png` (for X, up to 4 images), all tagged `card-look:Comic`. `python3 comic.py --check specs/x.json` validates without rendering. The docstring lists the slide types.
 - Slide one is the whole claim; the cast acts the story out; no URL, logo or call to action on a slide.
 - Copy the PDF and cover to `assets/social/<brand>/<yyyy-mm>-w<week>-<n>-<format>-comic.pdf` and `-comic-cover.png`, commit on this branch, and post the PDF as a Buffer document asset with the cover as `thumbnailUrl`.
+
+## Cartoon panels (OpenAI), mixed with our infographic slides
+
+Since 28/10/2026 (Kristian: "use ChatGPT to make these carousel images so they look good and like
+real cartoons, and then mix it up with the infographic types you can make yourself") every carousel
+mixes real cartoon panels with slides we draw:
+
+- Cartoons: a `cover` with a `scene`, `cartoon` slides, and `panel` / `myth` slides with a `scene`.
+  The scene is a brief for the illustrator and is never shown. Every word on a slide is ours.
+- Ours: `list`, `stat`, `versus` and the closing `moral`.
+
+How the art is made:
+
+1. Push a spec to `social-assets`.
+2. The GitHub Action "Draw cartoon art" (`.github/workflows/draw-art.yml`) runs `draw.py --missing`.
+   It sends each scene to OpenAI's image model (`gpt-image-2`, medium quality), with the mascot
+   sheet in `ref/` as a reference image so Corey and Phoney stay on model. Then it commits
+   `art/<key>/<n>.jpg`.
+3. Pull, then run `comic.py`. A cartoon slide with no art stops the render.
+
+The API key is the repo's `OPENAI_IMAGE_API_KEY` Actions secret (from Doppler `presso/prd`). It is
+never in a session or a prompt. A panel is never redrawn once it exists.
