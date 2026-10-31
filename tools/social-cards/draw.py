@@ -117,7 +117,9 @@ def missing():
             continue
         for n, s in enumerate(spec.get("slides") or [], 1):
             if s.get("scene") and not os.path.exists(art_path(spec["key"], n)):
-                todo.append((spec["brand"], s["scene"], art_path(spec["key"], n)))
+                # An infographic's banner is landscape; every carousel panel is portrait.
+                size = "1536x1024" if s.get("type") == "infographic" else "1024x1536"
+                todo.append((spec["brand"], s["scene"], art_path(spec["key"], n), size))
     return todo
 
 

@@ -34,6 +34,15 @@ Slide types (text may use **bold**; nothing else is markup):
   stat    big, caption, mood, source?
   myth    myth, fact, mood?
   moral   text, mood?, pose?, save?                        the line people quote, and "💾 Save this for ..."
+
+INFOGRAPHIC (Kristian, 31/10/2026: "go back to writing infographics and educate the market in a
+fun way"). A spec with "kind": "infographic" has exactly ONE slide of type "infographic" and renders
+one 1080x1350 image (out/<key>/<key>.png, plus cover.png): a cartoon banner drawn by OpenAI over
+our own teaching block. Post it as a single image, not a document.
+  infographic  kicker, title, scene, layout, items, sub?, source?, save?
+     layout "steps":   items [{emoji, title, text?}] 3-6     a how-to or checklist people save
+     layout "stats":   items [{big, text}] 2-4               numbers that teach (sources required)
+     layout "compare": items [{label, bad, good}] 2-5        the wrong way vs the right way
 moods: happy grin shock worried smug think sad wink.  poses: none wave point shrug hold cheer.
 props: up to 3 emoji drawn big in the scene (☕ 💻 📱 🎟️ 🐛 📋 ⏰ 🔥 ...).
 
@@ -59,7 +68,7 @@ import cast  # noqa: E402
 
 MOODS = {"happy", "grin", "shock", "worried", "smug", "think", "sad", "wink"}
 POSES = {"none", "wave", "point", "shrug", "hold", "cheer"}
-TYPES = {"cover", "panel", "cartoon", "versus", "list", "stat", "myth", "moral"}
+TYPES = {"cover", "panel", "cartoon", "versus", "list", "stat", "myth", "moral", "infographic"}
 LOOK = "Comic"
 
 THEME = {
@@ -70,7 +79,7 @@ THEME = {
 
 # Max characters per field. A slide that overflows is a slide nobody reads on a phone.
 LIMITS = {"title": 70, "kicker": 40, "sub": 110, "say": 90, "caption": 120, "note": 110, "label": 32,
-          "text": 120, "big": 12, "myth": 70, "fact": 110, "save": 60, "emoji": 4, "source": 90, "scene": 700}
+          "text": 120, "big": 12, "myth": 70, "fact": 110, "save": 60, "emoji": 4, "source": 90, "scene": 700, "bad": 70, "good": 70}
 
 
 def fmt(s):
@@ -139,6 +148,28 @@ b{font-weight:900}
 .stage.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%}
 .stage.pic .say{position:relative;margin:24px 24px 0;font-size:40px;align-self:flex-start;max-width:80%}
 .art{position:fixed;inset:0;z-index:-1;background:var(--ink)}
+body.ig{padding:0;background-image:none}
+.ig .ban{position:relative;height:500px;border-bottom:6px solid var(--ink);background:var(--ink)}
+.ig .ban img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.ig .ban .hdr{position:absolute;left:44px;right:44px;top:34px;border:6px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:26px 32px}
+.ig .ban .hdr h1{font-size:62px;letter-spacing:-1.5px}
+.ig .ban .hdr p{font-size:28px;margin-top:10px}
+.ig .bd{flex:1;min-height:0;display:flex;flex-direction:column;gap:18px;padding:30px 44px 0}
+.ig .st{display:flex;align-items:center;gap:22px;border:5px solid var(--ink);box-shadow:8px 8px 0 var(--ink);background:#fff;padding:14px 24px}
+.ig .st .n{flex:0 0 58px;height:58px;border-radius:50%;background:var(--hdr);border:4px solid var(--ink);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:30px}
+.ig .st .em{font-size:52px;flex:0 0 auto}
+.ig .st .tx{font-size:36px;font-weight:900;line-height:1.1}.ig .st .tx span{display:block;font-size:26px;font-weight:500;color:#333;margin-top:4px;line-height:1.2}
+.ig .stats{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.ig .sb{border:5px solid var(--ink);box-shadow:8px 8px 0 var(--ink);background:#fff;padding:20px 24px}
+.ig .sb .b{font-weight:900;font-size:86px;line-height:.95;color:var(--acc);letter-spacing:-2px}.ig .sb p{font-size:30px;font-weight:700;margin-top:8px;line-height:1.2}
+.ig .cmp{display:grid;grid-template-columns:200px 1fr 1fr;gap:12px;align-items:stretch}
+.ig .cmp .h{font-weight:900;font-size:26px;letter-spacing:3px;text-transform:uppercase;padding:8px 14px;color:#fff;border:4px solid var(--ink)}
+.ig .cmp .l{font-weight:900;font-size:28px;display:flex;align-items:center}
+.ig .cmp .c{border:4px solid var(--ink);background:#fff;padding:12px 16px;font-size:27px;font-weight:600;line-height:1.2}
+.ig .ft{display:flex;justify-content:space-between;align-items:flex-end;padding:18px 44px 30px;gap:20px}
+.ig .ft .save{margin:0;font-size:34px;max-width:640px}
+.ig .ft .src{font-size:22px;color:#555;margin:0}
+.ig .ft svg{flex:0 0 auto}
 .art img{width:100%;height:100%;object-fit:cover;object-position:50% 72%}
 body.toon{background-image:none}
 body.toon .cnt{margin-top:auto;align-self:stretch}
@@ -169,8 +200,28 @@ def art(s):
     return f'<div class="art"><img src="file://{html.escape(s["_art"])}"></div>'
 
 
+def infographic(brand, s):
+    sub = f'<p>{fmt(s["sub"])}</p>' if s.get("sub") else ""
+    ban = (f'<div class="ban"><img src="file://{html.escape(s["_art"])}">'
+           f'<div class="box hdr"><div class="kick">{fmt(s["kicker"])}</div><h1>{fmt(s["title"])}</h1>{sub}</div></div>')
+    lay, it = s["layout"], s["items"]
+    if lay == "steps":
+        body = "".join(f'<div class="st"><div class="n">{i}</div><div class="em">{html.escape(x.get("emoji", ""))}</div>'
+                       f'<div class="tx">{fmt(x["title"])}{"<span>" + fmt(x["text"]) + "</span>" if x.get("text") else ""}</div></div>'
+                       for i, x in enumerate(it, 1))
+    elif lay == "stats":
+        body = '<div class="stats">' + "".join(f'<div class="sb"><div class="b">{fmt(x["big"])}</div><p>{fmt(x["text"])}</p></div>' for x in it) + "</div>"
+    else:
+        body = ('<div class="cmp"><div></div><div class="h" style="background:var(--bad)">Instead of</div><div class="h" style="background:var(--ok)">Try</div>'
+                + "".join(f'<div class="l">{fmt(x["label"])}</div><div class="c">{fmt(x["bad"])}</div><div class="c">{fmt(x["good"])}</div>' for x in it) + "</div>")
+    left = (f'<div class="save">{fmt(s["save"])}</div>' if s.get("save") else "") + (f'<div class="src">{fmt(s["source"])}</div>' if s.get("source") else "")
+    return f'{ban}<div class="bd">{body}</div><div class="ft"><div>{left}</div>{char(brand, s, h=190)}</div>'
+
+
 def slide_body(brand, s):
     t = s["type"]
+    if t == "infographic":
+        return infographic(brand, s)
     if t == "cover" and s.get("scene"):
         sub = f'<p>{fmt(s["sub"])}</p>' if s.get("sub") else ""
         return f'{art(s)}<div class="box hdr"><div class="kick">{fmt(s["kicker"])}</div><h1>{fmt(s["title"])}</h1>{sub}</div>'
@@ -216,6 +267,9 @@ def page(brand, s, n, total, fonts):
     th = THEME[brand]
     vars_ = ";".join(f"--{k}:{v}" for k, v in th.items())
     swipe = "<span>SWIPE &#8594;</span>" if n == 1 else ""
+    if s["type"] == "infographic":
+        return (f'<!doctype html><html><head><meta charset="utf-8"><style>{fonts}:root{{{vars_}}}{CSS}</style></head>'
+                f'<body class="ig">{slide_body(brand, s)}</body></html>')
     return (f'<!doctype html><html><head><meta charset="utf-8"><style>{fonts}:root{{{vars_}}}{CSS}</style></head>'
             f'<body class="{"toon" if s.get("scene") else ""}">{slide_body(brand, s)}<div class="cnt"><span>{n} / {total}</span>{swipe}</div></body></html>')
 
@@ -227,10 +281,16 @@ def validate(spec):
     if not re.fullmatch(r"[a-z0-9][a-z0-9-]{3,80}", spec.get("key", "")):
         errs.append("key must be lowercase letters, digits and hyphens")
     sl = spec.get("slides") or []
-    if not 4 <= len(sl) <= 8:
-        errs.append(f"{len(sl)} slides: a carousel has 4 to 8")
-    if sl and sl[0].get("type") != "cover":
-        errs.append("slide 1 must be the cover: most people never swipe")
+    if spec.get("kind") == "infographic":
+        if len(sl) != 1 or sl[0].get("type") != "infographic":
+            errs.append('an infographic spec has exactly one slide, of type "infographic"')
+    else:
+        if not 4 <= len(sl) <= 8:
+            errs.append(f"{len(sl)} slides: a carousel has 4 to 8")
+        if sl and sl[0].get("type") != "cover":
+            errs.append("slide 1 must be the cover: most people never swipe")
+        if any(s.get("type") == "infographic" for s in sl):
+            errs.append('an "infographic" slide needs a spec of "kind": "infographic"')
     for i, s in enumerate(sl, 1):
         if s.get("type") not in TYPES:
             errs.append(f"slide {i}: unknown type {s.get('type')}")
@@ -243,6 +303,7 @@ def validate(spec):
         need = {"cover": ["kicker", "title"] + ([] if s.get("scene") else ["mood"]),
                 "panel": ["label", "caption"] + ([] if s.get("scene") else ["mood"]),
                 "cartoon": ["caption", "scene"], "versus": ["left", "right"],
+                "infographic": ["kicker", "title", "scene", "layout", "items"],
                 "list": ["label", "items"], "stat": ["big", "caption", "mood"], "myth": ["myth", "fact"], "moral": ["text"]}[s["type"]]
         for k in need:
             if not s.get(k):
@@ -266,6 +327,15 @@ def validate(spec):
         chk(s, f"slide {i}")
         if s["type"] == "list" and not 2 <= len(s.get("items") or []) <= 5:
             errs.append(f"slide {i}: a list has 2 to 5 items")
+        if s["type"] == "infographic":
+            lay, n = s.get("layout"), len(s.get("items") or [])
+            rng = {"steps": (3, 6), "stats": (2, 4), "compare": (2, 5)}.get(lay)
+            if not rng:
+                errs.append(f"slide {i}: layout must be steps, stats or compare")
+            elif not rng[0] <= n <= rng[1]:
+                errs.append(f"slide {i}: a {lay} infographic has {rng[0]} to {rng[1]} items")
+            if lay == "stats" and not s.get("source"):
+                errs.append(f"slide {i}: a stats infographic names its source")
     return errs
 
 
@@ -298,7 +368,7 @@ def render(spec_path, br):
         pg.wait_for_load_state("networkidle")
         pg.wait_for_timeout(250)
         over = pg.evaluate("""() => { const b=document.body; if (b.scrollHeight>1350) return 'page '+b.scrollHeight;
-            for (const el of document.querySelectorAll('.cap,.item,.hdr,.save,.statcap,.vs .pb'))
+            for (const el of document.querySelectorAll('.cap,.item,.hdr,.save,.statcap,.vs .pb,.ig .bd,.ig .st,.ig .sb,.ig .c'))
               if (el.scrollHeight>el.clientHeight+2 || el.scrollWidth>el.clientWidth+2) return el.className;
             const who=document.querySelector('.stage .who svg');
             if (who && who.getBoundingClientRect().height < 300) return 'character squeezed under 300px: shorten the bubble or caption';
@@ -316,6 +386,9 @@ def render(spec_path, br):
         pg.pdf(path=pdf, width="1080px", height="1350px", print_background=True, page_ranges="1")
         writer.append(PdfReader(pdf))
         os.remove(pdf)
+    if spec.get("kind") == "infographic":
+        import shutil
+        shutil.copy(os.path.join(out, "slide-1.png"), os.path.join(out, f"{key}.png"))
     with open(os.path.join(out, f"{key}.pdf"), "wb") as fh:
         writer.write(fh)
     pg.close()

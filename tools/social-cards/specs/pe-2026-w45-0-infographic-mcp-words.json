@@ -1,0 +1,23 @@
+{
+  "key": "pe-2026-w45-0-infographic-mcp-words",
+  "brand": "pe",
+  "kind": "infographic",
+  "slides": [
+    {
+      "type": "infographic",
+      "kicker": "AI jargon, decoded",
+      "title": "The 4 words you'll see when your AI **gets tools**",
+      "scene": "A busy small business owner sits at a cafe table looking baffled at a giant floating cloud of tangled jargon made of abstract squiggles and knots above their laptop; Phoney the blue phone character stands on the table with a pair of oversized scissors, cheerfully snipping the tangle into four neat glowing pieces that float down in a tidy row. Warm, funny, bright colours.",
+      "layout": "steps",
+      "items": [
+        {"emoji": "🧰", "title": "MCP app", "text": "A tool your AI can use, so it does a real job instead of only talking."},
+        {"emoji": "🔌", "title": "Connector", "text": "How you add it: paste one web address into your AI's settings and sign in."},
+        {"emoji": "📋", "title": "Skill", "text": "A written, step-by-step way of doing one job well. No making it up each time."},
+        {"emoji": "📚", "title": "Knowledge pack", "text": "Researched reference your AI reads first, so it answers from facts, not a guess."}
+      ],
+      "mood": "wink",
+      "pose": "point",
+      "save": "💾 Save this for the next AI meeting"
+    }
+  ]
+}
