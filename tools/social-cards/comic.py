@@ -149,16 +149,16 @@ b{font-weight:900}
 .stage.pic .say{position:relative;margin:24px 24px 0;font-size:40px;align-self:flex-start;max-width:80%}
 .art{position:fixed;inset:0;z-index:-1;background:var(--ink)}
 body.ig{padding:0;background-image:none}
-.ig .ban{position:relative;height:500px;border-bottom:6px solid var(--ink);background:var(--ink)}
+.ig .ban{position:relative;height:520px;border-bottom:6px solid var(--ink);background:var(--ink)}
 .ig .ban img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
-.ig .ban .hdr{position:absolute;left:44px;right:44px;top:34px;border:6px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:26px 32px}
-.ig .ban .hdr h1{font-size:62px;letter-spacing:-1.5px}
+.ig .ban .hdr{position:absolute;left:44px;right:180px;top:30px;border:6px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:20px 28px}
+.ig .ban .hdr h1{font-size:52px;letter-spacing:-1.2px}.ig .ban .hdr .kick{font-size:22px;margin-bottom:10px}
 .ig .ban .hdr p{font-size:28px;margin-top:10px}
-.ig .bd{flex:1;min-height:0;display:flex;flex-direction:column;gap:18px;padding:30px 44px 0}
-.ig .st{display:flex;align-items:center;gap:22px;border:5px solid var(--ink);box-shadow:8px 8px 0 var(--ink);background:#fff;padding:14px 24px}
+.ig .bd{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:16px;padding:24px 44px 0}
+.ig .st{display:flex;align-items:center;gap:22px;border:5px solid var(--ink);box-shadow:8px 8px 0 var(--ink);background:#fff;padding:10px 22px}
 .ig .st .n{flex:0 0 58px;height:58px;border-radius:50%;background:var(--hdr);border:4px solid var(--ink);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:30px}
 .ig .st .em{font-size:52px;flex:0 0 auto}
-.ig .st .tx{font-size:36px;font-weight:900;line-height:1.1}.ig .st .tx span{display:block;font-size:26px;font-weight:500;color:#333;margin-top:4px;line-height:1.2}
+.ig .st .tx{font-size:34px;font-weight:900;line-height:1.1}.ig .st .tx span{display:block;font-size:25px;font-weight:500;color:#333;margin-top:4px;line-height:1.2}
 .ig .stats{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .ig .sb{border:5px solid var(--ink);box-shadow:8px 8px 0 var(--ink);background:#fff;padding:20px 24px}
 .ig .sb .b{font-weight:900;font-size:86px;line-height:.95;color:var(--acc);letter-spacing:-2px}.ig .sb p{font-size:30px;font-weight:700;margin-top:8px;line-height:1.2}
@@ -166,8 +166,8 @@ body.ig{padding:0;background-image:none}
 .ig .cmp .h{font-weight:900;font-size:26px;letter-spacing:3px;text-transform:uppercase;padding:8px 14px;color:#fff;border:4px solid var(--ink)}
 .ig .cmp .l{font-weight:900;font-size:28px;display:flex;align-items:center}
 .ig .cmp .c{border:4px solid var(--ink);background:#fff;padding:12px 16px;font-size:27px;font-weight:600;line-height:1.2}
-.ig .ft{display:flex;justify-content:space-between;align-items:flex-end;padding:18px 44px 30px;gap:20px}
-.ig .ft .save{margin:0;font-size:34px;max-width:640px}
+.ig .ft{display:flex;justify-content:space-between;align-items:flex-end;padding:14px 44px 26px;gap:20px}
+.ig .ft .save{margin:0;font-size:32px;max-width:700px;padding:16px 24px}
 .ig .ft .src{font-size:22px;color:#555;margin:0}
 .ig .ft svg{flex:0 0 auto}
 .art img{width:100%;height:100%;object-fit:cover;object-position:50% 72%}
@@ -215,7 +215,7 @@ def infographic(brand, s):
         body = ('<div class="cmp"><div></div><div class="h" style="background:var(--bad)">Instead of</div><div class="h" style="background:var(--ok)">Try</div>'
                 + "".join(f'<div class="l">{fmt(x["label"])}</div><div class="c">{fmt(x["bad"])}</div><div class="c">{fmt(x["good"])}</div>' for x in it) + "</div>")
     left = (f'<div class="save">{fmt(s["save"])}</div>' if s.get("save") else "") + (f'<div class="src">{fmt(s["source"])}</div>' if s.get("source") else "")
-    return f'{ban}<div class="bd">{body}</div><div class="ft"><div>{left}</div>{char(brand, s, h=190)}</div>'
+    return f'{ban}<div class="bd">{body}</div><div class="ft"><div>{left}</div>{char(brand, s, h=150)}</div>'
 
 
 def slide_body(brand, s):
