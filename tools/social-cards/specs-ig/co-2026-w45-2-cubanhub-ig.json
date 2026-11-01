@@ -1,0 +1,68 @@
+{
+ "key": "co-2026-w45-2-cubanhub-ig",
+ "brand": "co",
+ "layout": "hub",
+ "kicker": "The trillionaire in the basement",
+ "title": "A swarm still needs a founder.",
+ "sub": "Mark Cuban: one person with an agent swarm could build a trillion-dollar company.",
+ "height": 700,
+ "left": {
+  "no": "01",
+  "label": "The swarm",
+  "wire": "reports",
+  "nodes": [
+   {
+    "icon": "🔁",
+    "title": "Recurring work",
+    "text": "Runs every day, never bored"
+   },
+   {
+    "icon": "✍️",
+    "title": "Drafts and checks",
+    "text": "Writes, tests, files"
+   },
+   {
+    "icon": "🌙",
+    "title": "Night shifts",
+    "text": "Works while you sleep"
+   }
+  ]
+ },
+ "hub": {
+  "icon": "🧭",
+  "title": "Founder",
+  "small": "street smart · in charge",
+  "no": "02",
+  "label": "The one human"
+ },
+ "right": {
+  "no": "03",
+  "label": "Only you",
+  "wire": "decides",
+  "nodes": [
+   {
+    "icon": "🎯",
+    "title": "What to build",
+    "text": "And what to kill"
+   },
+   {
+    "icon": "👀",
+    "title": "The market",
+    "text": "Agents still can't see posts or ads",
+    "dim": true
+   },
+   {
+    "icon": "⚖️",
+    "title": "People and risk",
+    "text": "Timing, trust, judgement"
+   }
+  ]
+ },
+ "guard": {
+  "chip": "Cuban, a16z",
+  "text": "\"You've got to have somebody there who guides it and helps it.\"",
+  "wire": "says"
+ },
+ "source": "a16z podcast, via CoinMarketCap, 29/10/2026",
+ "save": "💾 Save this for your next \"will AI replace me?\""
+}

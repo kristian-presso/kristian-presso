@@ -1,0 +1,65 @@
+{
+ "key": "pe-2026-w45-4-hotelhub-ig",
+ "brand": "pe",
+ "layout": "hub",
+ "kicker": "MCP in the wild: hotels",
+ "title": "Hotels wired AI into the front desk.",
+ "sub": "One hotel platform's MCP use rose 70% from July to September 2026.",
+ "left": {
+  "no": "01",
+  "label": "The AI staff use",
+  "wire": "asks",
+  "nodes": [
+   {
+    "icon": "🧑‍💼",
+    "title": "Staff",
+    "text": "Ask in plain language"
+   },
+   {
+    "icon": "🤖",
+    "title": "Claude or ChatGPT",
+    "text": "Whichever AI they prefer"
+   }
+  ]
+ },
+ "hub": {
+  "icon": "🔌",
+  "title": "MCP server",
+  "small": "one connection · staff permissions · full audit trail",
+  "no": "02",
+  "label": "The connector"
+ },
+ "right": {
+  "no": "03",
+  "label": "Live hotel data",
+  "wire": "acts",
+  "nodes": [
+   {
+    "icon": "🛏️",
+    "title": "Reservations",
+    "text": "2,000 changed in one action"
+   },
+   {
+    "icon": "💷",
+    "title": "Rates",
+    "text": "Price lists to rate plans"
+   },
+   {
+    "icon": "📆",
+    "title": "Availability"
+   },
+   {
+    "icon": "👤",
+    "title": "Guest profiles"
+   }
+  ]
+ },
+ "guard": {
+  "chip": "The gap",
+  "text": "91% of hotel chains use AI. Only 15% have a data layer like MCP. 52% have no plans.",
+  "wire": "most can't"
+ },
+ "source": "Apaleo via Hospitality Net, 28/10/2026; h2c 2026",
+ "save": "💾 Save this for your next ops meeting",
+ "height": 720
+}

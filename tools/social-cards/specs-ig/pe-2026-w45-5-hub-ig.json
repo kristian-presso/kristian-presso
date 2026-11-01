@@ -1,0 +1,76 @@
+{
+ "key": "pe-2026-w45-5-hub-ig",
+ "brand": "pe",
+ "layout": "hub",
+ "kicker": "AI jargon, decoded",
+ "title": "Where MCP sits.",
+ "sub": "Your AI on one side. Your tools on the other. One connector in the middle.",
+ "top": {
+  "icon": "🙋",
+  "title": "You",
+  "text": "\"Sell 80 tickets at £15\"",
+  "wire": "one sentence"
+ },
+ "left": {
+  "no": "01",
+  "label": "Your AI",
+  "wire": "asks",
+  "nodes": [
+   {
+    "icon": "🤖",
+    "title": "Claude or ChatGPT",
+    "text": "Any AI that takes connectors"
+   },
+   {
+    "icon": "📋",
+    "title": "Skill",
+    "text": "The written way to do one job"
+   },
+   {
+    "icon": "📚",
+    "title": "Knowledge pack",
+    "text": "Facts it reads before it acts"
+   }
+  ]
+ },
+ "hub": {
+  "icon": "🔌",
+  "title": "MCP app",
+  "small": "added as a connector · one web address",
+  "no": "02",
+  "label": "The connector"
+ },
+ "right": {
+  "no": "03",
+  "label": "Your tools",
+  "wire": "acts",
+  "nodes": [
+   {
+    "icon": "🎟️",
+    "title": "Ticketing"
+   },
+   {
+    "icon": "🧾",
+    "title": "Invoices"
+   },
+   {
+    "icon": "📅",
+    "title": "Calendar"
+   },
+   {
+    "icon": "👥",
+    "title": "CRM"
+   },
+   {
+    "icon": "✉️",
+    "title": "Email"
+   }
+  ]
+ },
+ "guard": {
+  "chip": "Gate",
+  "text": "Nothing public, costly or permanent happens without your yes.",
+  "wire": "waits"
+ },
+ "save": "💾 Save this for the next AI meeting"
+}

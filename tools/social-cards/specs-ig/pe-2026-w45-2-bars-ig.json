@@ -1,0 +1,31 @@
+{
+ "key": "pe-2026-w45-2-bars-ig",
+ "brand": "pe",
+ "layout": "bars",
+ "kicker": "Agent readiness, October 2026",
+ "title": "Your next customer is an AI.",
+ "sub": "AI assistants visited 1,500+ organisations, the way customers now send them.",
+ "items": [
+  {
+   "value": 94,
+   "text": "could not accept an agent connection at all"
+  },
+  {
+   "value": 26,
+   "text": "blocked agents that said what they were",
+   "dark": true
+  },
+  {
+   "value": 6,
+   "text": "had published any position on AI agents",
+   "dark": true
+  },
+  {
+   "value": 1,
+   "text": "let a customer approve an agent for one limited task"
+  }
+ ],
+ "take": "Turn an agent away and it **books somewhere else**. The lost sale never shows up in your numbers.",
+ "source": "Encore AI Agent Readiness Index, via Fortune, 27/10/2026",
+ "save": "💾 Save this for your next website review"
+}
