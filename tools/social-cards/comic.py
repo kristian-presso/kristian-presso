@@ -168,7 +168,7 @@ body.ig{padding:0;background-image:none}
 .ig .cmp .c{border:4px solid var(--ink);background:#fff;padding:12px 16px;font-size:27px;font-weight:600;line-height:1.2}
 .ig .ft{display:flex;justify-content:space-between;align-items:flex-end;padding:14px 44px 26px;gap:20px}
 .ig .ft .save{margin:0;font-size:32px;max-width:700px;padding:16px 24px}
-.ig .ft .src{font-size:22px;color:#555;margin:0}
+.ig .ft .src{font-size:22px;color:#555;margin:18px 0 0}
 .ig .ft svg{flex:0 0 auto}
 .art img{width:100%;height:100%;object-fit:cover;object-position:50% 72%}
 body.toon{background-image:none}

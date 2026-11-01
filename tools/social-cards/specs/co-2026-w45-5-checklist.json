@@ -11,34 +11,29 @@
    "layout": "steps",
    "items": [
     {
-     "emoji": "🎯",
-     "title": "Pick one",
-     "text": "The pipeline, monitor or backup job you'd bet on."
-    },
-    {
      "emoji": "✍️",
      "title": "Write two questions",
-     "text": "The one it answers, and the one you think it answers."
+     "text": "What it answers. What you think it answers."
     },
     {
      "emoji": "👀",
      "title": "Ask the second",
-     "text": "Not \"did anything fail?\" but \"did anything happen?\""
+     "text": "Did anything actually happen?"
     },
     {
      "emoji": "🧱",
      "title": "Add a boring assertion",
-     "text": "Does a run exist for this commit? Nothing more."
+     "text": "Does a run exist for this commit?"
     },
     {
      "emoji": "❓",
-     "title": "Give \"can't tell\" its own exit",
+     "title": "Give \"can't tell\" an exit",
      "text": "0 ran, 1 never ran, 2 couldn't find out."
     },
     {
      "emoji": "🧪",
      "title": "Test the tester",
-     "text": "Mine passed for the wrong reason first time."
+     "text": "Mine passed for the wrong reason."
     }
    ],
    "mood": "think",

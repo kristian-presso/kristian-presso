@@ -5,7 +5,7 @@
   {
    "type": "cover",
    "kicker": "A build story",
-   "title": "My tests never ran. **For months.**",
+   "title": "My tests never ran. **Nobody noticed.**",
    "sub": "One line of config read like a promise. It was a filter.",
    "scene": "Corey the sprout stands guard proudly at a castle gate wearing a tiny helmet and holding a spear, saluting, while right behind him a long line of little carts quietly rolls through a side door in the wall that he cannot see. Funny, bright."
   },
@@ -18,7 +18,7 @@
   },
   {
    "type": "myth",
-   "myth": "\"Run the tests on anything heading for main.\"",
+   "myth": "Run the tests on anything heading for main.",
    "fact": "It runs only when the pull request's **base** is main. Stacked on another branch? Skipped. Not failed.",
    "mood": "shock"
   },

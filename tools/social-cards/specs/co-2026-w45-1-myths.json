@@ -13,27 +13,27 @@
     {
      "label": "Green",
      "bad": "Green means it worked.",
-     "good": "Green means everything that ran, passed."
+     "good": "Green means what ran, passed."
     },
     {
      "label": "Quiet",
-     "bad": "No alerts, so all is fine.",
-     "good": "Ask a second question: did anything actually happen?"
+     "bad": "No alerts, all fine.",
+     "good": "Ask: did anything actually happen?"
     },
     {
      "label": "Exit",
      "bad": "Pass or fail is enough.",
-     "good": "Three answers: it ran, it never ran, I could not tell."
+     "good": "Ran. Never ran. Couldn't tell."
     },
     {
      "label": "Fix",
      "bad": "Build a smarter check.",
-     "good": "Add a separate, boring one that only asks if the first fired."
+     "good": "Add a boring one: did the first fire?"
     },
     {
      "label": "Tests",
-     "bad": "My test passed, so it works.",
-     "good": "A test can pass for the wrong reason. Check what it expected."
+     "bad": "It passed, so it works.",
+     "good": "Tests pass for wrong reasons too."
     }
    ],
    "mood": "smug",
