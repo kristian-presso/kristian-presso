@@ -1,5 +1,17 @@
 # Social cards
 
+## Editorial infographics (the only look from 01/11/2026)
+
+Kristian, 01/11/2026: "switch from cartoons into infographics and make super cool, nice
+infographics", with "The self-improving harness" as the bar. Every post on every channel is one
+image from `infographic.py` (layouts `versus`, `rules`, `stats`, `steps`, `flow`, `poster`), specs
+in `specs-ig/`, fonts in `ig-fonts/`. The cartoon and carousel tools below are kept for history and
+are no longer used by the weekly rhythm.
+
+    python3 infographic.py --check specs-ig/<key>.json
+    python3 infographic.py specs-ig/<key>.json      # -> out/<key>/<key>.png, 2160x2700, card-look:Infographic
+
+
 Weekly LinkedIn cards for Presso Events and Corey (and the format used for Kristian's weeks).
 
 - `make.py` holds the brand tokens, six layouts (four-panel story, numbers, before/after, checklist, question, myth vs fact) and the week's card content in `CARDS`.
