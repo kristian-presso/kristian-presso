@@ -113,7 +113,13 @@ def missing():
     todo = []
     for sp in sorted(glob.glob(os.path.join(HERE, "specs", "*.json"))):
         spec = json.load(open(sp))
-        if spec.get("brand") not in CAST:
+        if spec.get("brand") not in CAST and spec.get("kind") != "banner":
+            continue
+        if spec.get("kind") == "banner":
+            # A banner shows both mascots, so it goes through banner_art.py (both reference sheets).
+            out = art_path(spec["key"], 1)
+            if not os.path.exists(out):
+                todo.append(("banner", spec["scene"], out, "1536x1024"))
             continue
         for n, s in enumerate(spec.get("slides") or [], 1):
             if s.get("scene") and not os.path.exists(art_path(spec["key"], n)):
@@ -133,6 +139,15 @@ def draw_missing():
 
     def one(t):
         try:
+            if t[0] == "banner":
+                import banner_art
+                os.makedirs(os.path.dirname(t[2]), exist_ok=True)
+                png = t[2][:-4] + ".png"
+                r = banner_art.banner(t[1], png, t[3])
+                from PIL import Image
+                Image.open(png).convert("RGB").save(t[2], "JPEG", quality=90, optimize=True)
+                os.remove(png)
+                return f"{os.path.relpath(t[2], HERE)} {r}"
             return f"{os.path.relpath(t[2], HERE)} {draw(*t)}"
         except SystemExit as e:
             fails.append(f"{os.path.relpath(t[2], HERE)}: {e}")
