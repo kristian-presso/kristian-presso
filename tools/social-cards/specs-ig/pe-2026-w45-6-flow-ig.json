@@ -1,0 +1,73 @@
+{
+ "key": "pe-2026-w45-6-flow-ig",
+ "brand": "pe",
+ "layout": "flow",
+ "kicker": "Thought experiment",
+ "title": "One sentence. Event on sale.",
+ "sub": "What an events MCP app does with one plain request.",
+ "stages": [
+  {
+   "label": "You ask",
+   "kind": "terminal",
+   "title": "chat",
+   "lines": [
+    "you: set up our October",
+    "     networking night,",
+    "     80 places, £15 a ticket",
+    "✓ event created (draft)"
+   ]
+  },
+  {
+   "label": "The app",
+   "kind": "circle",
+   "title": "MCP app",
+   "small": "creates · asks · reads back"
+  },
+  {
+   "label": "The checks",
+   "kind": "cards",
+   "cards": [
+    {
+     "chip": "Asks",
+     "text": "Anything it doesn't know."
+    },
+    {
+     "chip": "Reads back",
+     "dark": true,
+     "text": "The price, before it's live."
+    },
+    {
+     "chip": "Waits",
+     "dashed": true,
+     "dark": true,
+     "text": "For your yes."
+    }
+   ]
+  },
+  {
+   "label": "On sale",
+   "kind": "stack",
+   "rows": [
+    {
+     "t": "details",
+     "badge": "✓"
+    },
+    {
+     "t": "price",
+     "badge": "✓"
+    },
+    {
+     "t": "your yes",
+     "badge": "✓",
+     "hl": true
+    },
+    {
+     "t": "tickets live",
+     "hl": true
+    }
+   ]
+  }
+ ],
+ "loop": "Which job would you hand your AI **first**?",
+ "save": "💾 Save this for your next \"what's MCP?\""
+}

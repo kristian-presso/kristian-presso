@@ -1,0 +1,33 @@
+{
+ "key": "pe-2026-w45-1-myths-ig",
+ "brand": "pe",
+ "layout": "versus",
+ "kicker": "MCP, myth-busted",
+ "title": "AI with tools isn't scary.",
+ "sub": "An MCP app is a tool your AI can use, so it does the job instead of talking about it.",
+ "left": {
+  "label": "What people think",
+  "title": "The myths",
+  "items": [
+   "You need a developer to set it up",
+   "MCP is one company's thing",
+   "Give AI a tool and it runs wild",
+   "Any AI will do"
+  ]
+ },
+ "right": {
+  "label": "What's true",
+  "title": "The facts",
+  "items": [
+   "If you can change a phone setting, you can add one",
+   "An open standard. Claude and ChatGPT both use it",
+   "Ours wait for your yes on anything public or costly",
+   "It needs connectors. On Claude, a paid plan"
+  ]
+ },
+ "tell": {
+  "label": "MCP",
+  "text": "Model Context Protocol: one shared way for any AI to use outside tools."
+ },
+ "save": "💾 Save this for the next \"is AI safe?\" chat"
+}

@@ -1,0 +1,32 @@
+{
+ "key": "pe-2026-w45-4-hotels-ig",
+ "brand": "pe",
+ "layout": "versus",
+ "kicker": "MCP in the wild: hotels",
+ "title": "Hotels handed AI the boring bits.",
+ "sub": "One hotel platform's MCP use rose 70% from July to September 2026.",
+ "left": {
+  "label": "By hand",
+  "title": "Before",
+  "items": [
+   "About 50 hours to amend 2,000 reservations",
+   "3 people, 2 weeks for a budget forecast",
+   "A system migration takes weeks"
+  ]
+ },
+ "right": {
+  "label": "With an MCP connection",
+  "title": "After",
+  "items": [
+   "2,000 reservations amended in one action",
+   "The forecast comes back the same day",
+   "Migrations run in a few hours"
+  ]
+ },
+ "tell": {
+  "label": "The gap",
+  "text": "91% of hotel chains use AI. Only 15% have a data layer like MCP for it, and 52% have no plans."
+ },
+ "source": "Apaleo via Hospitality Net, 28/10/2026; h2c 2026",
+ "save": "💾 Save this for your next ops meeting"
+}

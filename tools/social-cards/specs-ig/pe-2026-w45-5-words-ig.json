@@ -1,0 +1,27 @@
+{
+ "key": "pe-2026-w45-5-words-ig",
+ "brand": "pe",
+ "layout": "rules",
+ "kicker": "AI jargon, decoded",
+ "title": "4 words. That's all you need.",
+ "sub": "What you'll hear when your AI starts getting tools.",
+ "rows": [
+  {
+   "k": "MCP app",
+   "v": "A tool your AI can use, so it does a real job instead of only talking. Like selling tickets."
+  },
+  {
+   "k": "Connector",
+   "v": "How you add it. Paste one web address into your AI's settings and sign in. Nothing to install."
+  },
+  {
+   "k": "Skill",
+   "v": "A written, step-by-step way of doing one job well. No making it up each time."
+  },
+  {
+   "k": "Knowledge pack",
+   "v": "Researched reference your AI reads first, so it answers from facts, not a guess."
+  }
+ ],
+ "save": "💾 Save this for the next AI meeting"
+}

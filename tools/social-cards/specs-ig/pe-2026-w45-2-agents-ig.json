@@ -1,0 +1,29 @@
+{
+ "key": "pe-2026-w45-2-agents-ig",
+ "brand": "pe",
+ "layout": "stats",
+ "kicker": "Agent readiness, October 2026",
+ "title": "Your next customer is an AI.",
+ "sub": "Researchers sent AI assistants to 1,500+ organisations, the way customers now do.",
+ "items": [
+  {
+   "big": "94%",
+   "text": "could not accept an agent connection at all"
+  },
+  {
+   "big": "26%",
+   "text": "blocked agents that said what they were"
+  },
+  {
+   "big": "1%",
+   "text": "let a customer approve an agent for one limited task"
+  },
+  {
+   "big": "6%",
+   "text": "had published any position on AI agents"
+  }
+ ],
+ "take": "Turn an agent away and it **books somewhere else**. The lost sale never shows up in your numbers.",
+ "source": "Encore AI Agent Readiness Index, via Fortune, 27/10/2026",
+ "save": "💾 Save this for your next website review"
+}

@@ -1,0 +1,33 @@
+{
+ "key": "co-2026-w45-2-cuban-ig",
+ "brand": "co",
+ "layout": "versus",
+ "kicker": "The trillionaire in the basement",
+ "title": "One founder. A swarm of agents. Still you.",
+ "sub": "Mark Cuban says one person with an agent swarm could build a trillion-dollar company.",
+ "left": {
+  "label": "What agents do",
+  "title": "The swarm",
+  "items": [
+   "Run the recurring work",
+   "Draft, check, file and report",
+   "Work all night without getting bored"
+  ],
+  "mark": "→"
+ },
+ "right": {
+  "label": "What stays yours",
+  "title": "The founder",
+  "items": [
+   "Judgement: street smart, not book smart",
+   "Seeing the market: agents still can't see social posts or ads",
+   "Deciding what is worth building"
+  ]
+ },
+ "tell": {
+  "label": "Cuban, a16z",
+  "text": "\"You've got to have somebody there who guides it and helps it.\""
+ },
+ "source": "a16z podcast, via CoinMarketCap, 29/10/2026",
+ "save": "💾 Save this for your next \"will AI replace me?\""
+}

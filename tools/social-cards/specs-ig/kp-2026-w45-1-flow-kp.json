@@ -1,0 +1,75 @@
+{
+ "key": "kp-2026-w45-1-flow-kp",
+ "brand": "kp",
+ "layout": "flow",
+ "kicker": "Running a company with an AI CEO",
+ "title": "Log first. Ticket later.",
+ "sub": "A fault earns a ticket by recurring, not by occurring.",
+ "stages": [
+  {
+   "label": "The fault",
+   "kind": "terminal",
+   "title": "nightly job",
+   "lines": [
+    "$ run nightly-job",
+    "✗ runner not acquired",
+    "$ retry",
+    "✗ runner not acquired",
+    "✓ ok (3rd try)",
+    "you: three tickets for one blip?"
+   ]
+  },
+  {
+   "label": "The log",
+   "kind": "circle",
+   "title": "Fault log",
+   "small": "counts · clusters · waits"
+  },
+  {
+   "label": "The rule",
+   "kind": "cards",
+   "cards": [
+    {
+     "chip": "3 days",
+     "text": "Same class on 3 separate days: ticket."
+    },
+    {
+     "chip": "Now",
+     "dark": true,
+     "text": "Touches a customer or money: ticket at once."
+    },
+    {
+     "chip": "0",
+     "dashed": true,
+     "dark": true,
+     "text": "A one-off burst stays a log line."
+    }
+   ]
+  },
+  {
+   "label": "The backlog",
+   "kind": "stack",
+   "rows": [
+    {
+     "t": "open: 631"
+    },
+    {
+     "t": "new a week: 113"
+    },
+    {
+     "t": "filed that week: 2",
+     "hl": true,
+     "badge": "not ~30"
+    },
+    {
+     "t": "key: run ID",
+     "hl": true,
+     "badge": "✓"
+    }
+   ]
+  }
+ ],
+ "loop": "Cluster on a **run ID**, never on a title.",
+ "source": "Presso Network notes, 31/08/2026",
+ "save": "💾 Save this for your next backlog review"
+}

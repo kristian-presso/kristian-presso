@@ -1,0 +1,35 @@
+{
+ "key": "co-2026-w45-1-myths-ig",
+ "brand": "co",
+ "layout": "versus",
+ "kicker": "Green tick, myth-busted",
+ "title": "5 lies a green tick tells.",
+ "sub": "Zero checks failed and zero checks ran show the same tick.",
+ "left": {
+  "label": "What it seems to say",
+  "title": "The tick",
+  "items": [
+   "It worked",
+   "No alerts, so all is fine",
+   "Pass or fail is enough",
+   "Build a smarter check",
+   "It passed, so it works"
+  ]
+ },
+ "right": {
+  "label": "What it means",
+  "title": "The truth",
+  "items": [
+   "Everything that ran, passed",
+   "Ask: did anything actually happen?",
+   "Ran. Never ran. Couldn't tell.",
+   "Add a boring one: did the first fire?",
+   "Tests pass for wrong reasons too"
+  ]
+ },
+ "tell": {
+  "label": "Rule",
+  "text": "An empty result agrees with every question you ask it."
+ },
+ "save": "💾 Save this for your next \"all green\" stand-up"
+}

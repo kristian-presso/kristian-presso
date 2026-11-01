@@ -1,0 +1,35 @@
+{
+ "key": "co-2026-w45-5-steps-ig",
+ "brand": "co",
+ "layout": "steps",
+ "kicker": "A 20-minute audit",
+ "title": "Check the check you trust most.",
+ "items": [
+  {
+   "emoji": "✍️",
+   "title": "Write two questions",
+   "text": "The one it answers, and the one you think it answers."
+  },
+  {
+   "emoji": "👀",
+   "title": "Ask the second",
+   "text": "Not \"did anything fail?\" but \"did anything happen?\""
+  },
+  {
+   "emoji": "🧱",
+   "title": "Add a boring assertion",
+   "text": "Does a run exist for this commit? Nothing more."
+  },
+  {
+   "emoji": "❓",
+   "title": "Give \"can't tell\" an exit code",
+   "text": "0 ran. 1 never ran. 2 couldn't find out."
+  },
+  {
+   "emoji": "🧪",
+   "title": "Test the tester",
+   "text": "Mine passed for the wrong reason first time."
+  }
+ ],
+ "save": "💾 Save this for Monday morning"
+}

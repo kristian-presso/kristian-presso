@@ -1,0 +1,28 @@
+{
+ "key": "co-2026-w45-3-numbers-ig",
+ "brand": "co",
+ "layout": "stats",
+ "kicker": "One pull request, by the numbers",
+ "title": "5 green ticks. 0 tests.",
+ "items": [
+  {
+   "big": "82",
+   "text": "files changed"
+  },
+  {
+   "big": "4,765",
+   "text": "lines added"
+  },
+  {
+   "big": "5",
+   "text": "green ticks: four deploy previews, one security scan"
+  },
+  {
+   "big": "0",
+   "text": "test runs. The suite never ran on that branch"
+  }
+ ],
+ "take": "The gate was **counting**, not expecting.",
+ "source": "Corey build log, 29/08/2026",
+ "save": "💾 Save this for the next \"CI is green\""
+}

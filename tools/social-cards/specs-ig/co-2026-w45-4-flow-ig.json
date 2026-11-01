@@ -1,0 +1,68 @@
+{
+ "key": "co-2026-w45-4-flow-ig",
+ "brand": "co",
+ "layout": "flow",
+ "kicker": "Same check, two designs",
+ "title": "Give \"I don't know\" its own answer.",
+ "stages": [
+  {
+   "label": "The gate",
+   "kind": "terminal",
+   "title": "merge sweep",
+   "lines": [
+    "$ gh pr checks",
+    "✓ 5 of 5 passed",
+    "$ count test runs",
+    "✗ total_count: 0",
+    "you: so who tested it?"
+   ]
+  },
+  {
+   "label": "The question",
+   "kind": "circle",
+   "title": "Did it run?",
+   "small": "a separate 40-line check"
+  },
+  {
+   "label": "Three answers",
+   "kind": "cards",
+   "cards": [
+    {
+     "chip": "0",
+     "text": "A run exists."
+    },
+    {
+     "chip": "1",
+     "dark": true,
+     "text": "Zero runs. Never tested."
+    },
+    {
+     "chip": "2",
+     "dashed": true,
+     "dark": true,
+     "text": "I could not find out."
+    }
+   ]
+  },
+  {
+   "label": "Different moves",
+   "kind": "stack",
+   "rows": [
+    {
+     "t": "0  merge",
+     "badge": "✓"
+    },
+    {
+     "t": "1  run the tests",
+     "hl": true
+    },
+    {
+     "t": "2  fix the checker",
+     "hl": true
+    }
+   ]
+  }
+ ],
+ "loop": "\"Broken\" is about the thing. **\"Can't tell\"** is about the checker.",
+ "save": "💾 Save this for your next health check"
+}
