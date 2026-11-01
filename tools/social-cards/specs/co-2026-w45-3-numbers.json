@@ -1,0 +1,36 @@
+{
+ "key": "co-2026-w45-3-numbers",
+ "brand": "co",
+ "kind": "infographic",
+ "slides": [
+  {
+   "type": "infographic",
+   "kicker": "One pull request, by the numbers",
+   "title": "5 green ticks. **0 tests.**",
+   "scene": "Corey the sprout stands on a small stepladder about to press a giant green merge button with great ceremony, wearing a ribbon-cutting sash and holding oversized scissors, while a tiny crash-test dummy sits in the corner still in its unopened box, never used. Funny, bright.",
+   "layout": "stats",
+   "items": [
+    {
+     "big": "82",
+     "text": "files changed in the pull request"
+    },
+    {
+     "big": "4,765",
+     "text": "lines added"
+    },
+    {
+     "big": "5",
+     "text": "green ticks: four deploy previews, one security scan"
+    },
+    {
+     "big": "0",
+     "text": "test runs. The suite had never run on that branch"
+    }
+   ],
+   "source": "Corey build log, 29/08/2026",
+   "mood": "shock",
+   "pose": "shrug",
+   "save": "💾 Save this for the next time someone says \"CI is green\""
+  }
+ ]
+}

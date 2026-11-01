@@ -1,0 +1,53 @@
+{
+ "key": "co-2026-w45-6-question",
+ "brand": "co",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "A thought experiment",
+   "title": "Which of your systems **went quiet**?",
+   "sub": "Quiet and fine look exactly the same from the dashboard.",
+   "scene": "Corey the sprout sits in a cosy armchair reading a newspaper with a contented smile in a peaceful living room, while through the window behind him the garden sprinkler, the bird feeder and the washing line have all quietly stopped, dusty and overgrown. Gentle, funny."
+  },
+  {
+   "type": "list",
+   "label": "Usual suspects",
+   "items": [
+    {
+     "emoji": "⏰",
+     "title": "The cron job",
+     "text": "Still scheduled. Points at a path you renamed."
+    },
+    {
+     "emoji": "📡",
+     "title": "The uptime monitor",
+     "text": "Still green. Watching a hostname that's gone."
+    },
+    {
+     "emoji": "🧪",
+     "title": "The test file",
+     "text": "Still there. Excluded by a glob someone tightened."
+    }
+   ],
+   "mood": "worried"
+  },
+  {
+   "type": "cartoon",
+   "label": "How you find out",
+   "caption": "Usually the day you **actually need it**.",
+   "scene": "Corey the sprout frantically pulls the cord on a fire alarm in a smoky kitchen, and instead of a bell, a single sad moth flutters out of the alarm box. A small toast fire smoulders in the toaster. Slapstick, funny."
+  },
+  {
+   "type": "stat",
+   "big": "0",
+   "caption": "Results reads as **\"no failures\"**. It also reads as \"nothing ran\".",
+   "mood": "shock"
+  },
+  {
+   "type": "moral",
+   "text": "What's the system you'd be most surprised to find has gone quiet?",
+   "mood": "wink",
+   "pose": "wave"
+  }
+ ]
+}

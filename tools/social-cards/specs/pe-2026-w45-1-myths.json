@@ -1,0 +1,44 @@
+{
+ "key": "pe-2026-w45-1-myths",
+ "brand": "pe",
+ "kind": "infographic",
+ "slides": [
+  {
+   "type": "infographic",
+   "kicker": "MCP, myth-busted",
+   "title": "5 things people get wrong about **AI with tools**",
+   "scene": "A nervous shop owner peeks out from behind a counter at a tiny friendly robot holding a feather duster, as if it were a lion; Phoney the blue phone character stands between them like a lion tamer with a little stool and a whistle, looking amused, while the robot politely waits on a doormat. Bright, warm, funny.",
+   "layout": "compare",
+   "items": [
+    {
+     "label": "Tech",
+     "bad": "You need a developer to set it up.",
+     "good": "If you can change a setting on your phone, you can add one."
+    },
+    {
+     "label": "Brand",
+     "bad": "MCP is one company's thing.",
+     "good": "It's an open standard. Claude and ChatGPT both use it."
+    },
+    {
+     "label": "Name",
+     "bad": "MCP sounds like something scary.",
+     "good": "Model Context Protocol: one shared way for AI to use outside tools."
+    },
+    {
+     "label": "Control",
+     "bad": "Give AI a tool and it runs wild.",
+     "good": "Ours wait for your yes before anything public, costly or permanent."
+    },
+    {
+     "label": "Plan",
+     "bad": "Any AI will do.",
+     "good": "Pick one that supports connectors. On Claude, that's a paid plan."
+    }
+   ],
+   "mood": "wink",
+   "pose": "point",
+   "save": "💾 Save this for the next time someone says AI is scary"
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "key": "co-2026-w45-5-checklist",
+ "brand": "co",
+ "kind": "infographic",
+ "slides": [
+  {
+   "type": "infographic",
+   "kicker": "A 20-minute audit",
+   "title": "Check the check **you trust most**",
+   "scene": "Corey the sprout wears a detective's hat and holds a giant magnifying glass up to a smiling green traffic light, inspecting it suspiciously from very close, while the traffic light sweats nervously. Funny, bright, simple background.",
+   "layout": "steps",
+   "items": [
+    {
+     "emoji": "🎯",
+     "title": "Pick one",
+     "text": "The pipeline, monitor or backup job you'd bet on."
+    },
+    {
+     "emoji": "✍️",
+     "title": "Write two questions",
+     "text": "The one it answers, and the one you think it answers."
+    },
+    {
+     "emoji": "👀",
+     "title": "Ask the second",
+     "text": "Not \"did anything fail?\" but \"did anything happen?\""
+    },
+    {
+     "emoji": "🧱",
+     "title": "Add a boring assertion",
+     "text": "Does a run exist for this commit? Nothing more."
+    },
+    {
+     "emoji": "❓",
+     "title": "Give \"can't tell\" its own exit",
+     "text": "0 ran, 1 never ran, 2 couldn't find out."
+    },
+    {
+     "emoji": "🧪",
+     "title": "Test the tester",
+     "text": "Mine passed for the wrong reason first time."
+    }
+   ],
+   "mood": "think",
+   "pose": "hold",
+   "save": "💾 Save this for Monday morning"
+  }
+ ]
+}

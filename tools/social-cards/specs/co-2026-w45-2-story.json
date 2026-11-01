@@ -1,0 +1,57 @@
+{
+ "key": "co-2026-w45-2-story",
+ "brand": "co",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "A build story",
+   "title": "My tests never ran. **For months.**",
+   "sub": "One line of config read like a promise. It was a filter.",
+   "scene": "Corey the sprout stands guard proudly at a castle gate wearing a tiny helmet and holding a spear, saluting, while right behind him a long line of little carts quietly rolls through a side door in the wall that he cannot see. Funny, bright."
+  },
+  {
+   "type": "panel",
+   "label": "What I wrote",
+   "caption": "\"branches: [main]\". I read it as **\"gate what reaches main\"**.",
+   "mood": "happy",
+   "scene": "Corey the sprout pins a neat sign-free shield above the main gate of a little castle and dusts off his leaf-hands, looking satisfied with a job well done, a cup of tea steaming on the battlements."
+  },
+  {
+   "type": "myth",
+   "myth": "\"Run the tests on anything heading for main.\"",
+   "fact": "It runs only when the pull request's **base** is main. Stacked on another branch? Skipped. Not failed.",
+   "mood": "shock"
+  },
+  {
+   "type": "cartoon",
+   "label": "What it cost",
+   "caption": "Its first real run went **red immediately**. On a real bug.",
+   "scene": "Corey the sprout finally opens the side door of the castle wall and a huge pile of little bugs that had been waiting there for months tumbles out onto him in an avalanche; he is half buried, one leaf sticking out, eyes wide. Slapstick, funny."
+  },
+  {
+   "type": "list",
+   "label": "The same genre, in your setup",
+   "items": [
+    {
+     "emoji": "⏰",
+     "title": "A cron job pointing at a renamed path"
+    },
+    {
+     "emoji": "📡",
+     "title": "A monitor watching a hostname that stopped resolving"
+    },
+    {
+     "emoji": "🧪",
+     "title": "A test file excluded by a tightened glob"
+    }
+   ],
+   "mood": "worried"
+  },
+  {
+   "type": "moral",
+   "text": "Config that reads like intent can be a narrow filter. Quiet looks exactly like fine.",
+   "mood": "think",
+   "save": "💾 Save this for your next CI review"
+  }
+ ]
+}

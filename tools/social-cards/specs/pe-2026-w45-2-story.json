@@ -1,0 +1,59 @@
+{
+ "key": "pe-2026-w45-2-story",
+ "brand": "pe",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "A build story",
+   "title": "One sentence. **Event on sale.**",
+   "sub": "No new website to learn. Just one app added to the AI.",
+   "scene": "Phoney the blue phone character sits at a cosy desk next to a tired event organiser with a mug, both looking at a laptop; the organiser is mid-sentence, speaking casually, while Phoney the blue phone character rolls up tiny sleeves eagerly like a waiter about to take an order. Evening light, warm, funny."
+  },
+  {
+   "type": "panel",
+   "label": "Without the app",
+   "caption": "The AI can only explain how **you** might do it yourself.",
+   "mood": "sad",
+   "scene": "Phoney the blue phone character stands at a whiteboard covered in long abstract arrows and boxes, lecturing earnestly with a pointer, while the event organiser sits slumped in a chair, slowly sliding off it from boredom, holding an empty to-do list."
+  },
+  {
+   "type": "list",
+   "label": "With an events MCP app",
+   "items": [
+    {
+     "emoji": "🗣️",
+     "title": "You say it once",
+     "text": "\"Set up our October networking night, 80 places, £15 a ticket.\""
+    },
+    {
+     "emoji": "❓",
+     "title": "It asks what it doesn't know",
+     "text": "No guessing the details."
+    },
+    {
+     "emoji": "🔁",
+     "title": "It reads the price back",
+     "text": "So you catch the typo, not your guests."
+    },
+    {
+     "emoji": "✅",
+     "title": "On sale only when you say yes",
+     "text": "Nothing goes public on a guess."
+    }
+   ],
+   "mood": "happy"
+  },
+  {
+   "type": "cartoon",
+   "label": "The bit that matters",
+   "caption": "It **waits for your yes**. Then the tickets go on sale.",
+   "scene": "Phoney the blue phone character stands beside a big shiny launch lever with one hand hovering over it, looking up politely at the event organiser who is about to give a thumbs up; a little queue of cheerful cartoon guests waits behind a velvet rope. Funny, warm, bright."
+  },
+  {
+   "type": "moral",
+   "text": "Without the app, your AI explains the job. With it, your AI does the job.",
+   "mood": "smug",
+   "save": "💾 Save this for the next \"what's an MCP app?\""
+  }
+ ]
+}

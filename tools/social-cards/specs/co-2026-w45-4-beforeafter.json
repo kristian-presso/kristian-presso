@@ -1,0 +1,51 @@
+{
+ "key": "co-2026-w45-4-beforeafter",
+ "brand": "co",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Same check, two designs",
+   "title": "Give **\"I don't know\"** its own answer",
+   "sub": "A check with two answers will lie to you with one of them.",
+   "scene": "Corey the sprout sits as a quiz show contestant with three big buzzers in front of him instead of the usual one, looking delighted, while the other contestant, a grumpy cartoon robot, has only one buzzer and is sweating under the studio lights. Funny, bright."
+  },
+  {
+   "type": "cartoon",
+   "label": "Before: two answers",
+   "caption": "Network hiccup? That's an **outage report**. Every time.",
+   "scene": "Corey the sprout in pyjamas is woken at night by a huge clanging alarm bell beside the bed; outside the window a single tiny cloud has passed over the moon. He looks exhausted and unimpressed, hair-leaves sticking up."
+  },
+  {
+   "type": "versus",
+   "title": "Before vs after",
+   "left": {
+    "label": "❌ Two states",
+    "mood": "worried",
+    "text": "0 pass, 1 fail. Not knowing gets folded into one of them."
+   },
+   "right": {
+    "label": "✅ Three states",
+    "mood": "happy",
+    "text": "0 a run exists. 1 never tested. 2 I could not find out."
+   }
+  },
+  {
+   "type": "stat",
+   "big": "2",
+   "caption": "The exit code that says **\"the checker is the problem\"**, not the thing it checks.",
+   "mood": "think"
+  },
+  {
+   "type": "cartoon",
+   "label": "After",
+   "caption": "\"Broken\" and \"couldn't tell\" get **different responses**.",
+   "scene": "Corey the sprout calmly sorts envelopes into three neat pigeonholes at a post office counter, one with a green leaf sticker, one with a red leaf sticker, one with a big question-mark-shaped leaf; a queue of customers nods approvingly. Bright, tidy, funny."
+  },
+  {
+   "type": "moral",
+   "text": "Systems that can't say \"I don't know\" will say something else. Usually the reassuring thing.",
+   "mood": "smug",
+   "save": "💾 Save this for your next health check"
+  }
+ ]
+}

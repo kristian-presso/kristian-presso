@@ -1,0 +1,62 @@
+{
+ "key": "pe-2026-w45-6-question",
+ "brand": "pe",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "A thought experiment",
+   "title": "Your AI can do **one job**. Which?",
+   "sub": "And what must it ask you before it does it?",
+   "scene": "Phoney the blue phone character sits behind a small interview desk at a tiny job fair, wearing reading glasses, reviewing a line of quirky job candidates: a stack of unpaid invoices with little legs, a bulging email inbox tray, a ticket roll, and a social media megaphone, all waiting nervously in a row. Funny, bright."
+  },
+  {
+   "type": "list",
+   "label": "Pick one",
+   "items": [
+    {
+     "emoji": "🎟️",
+     "title": "Sell tickets for your next event"
+    },
+    {
+     "emoji": "🧾",
+     "title": "Chase the invoices nobody likes chasing"
+    },
+    {
+     "emoji": "📬",
+     "title": "Draft the newsletter"
+    },
+    {
+     "emoji": "📅",
+     "title": "Book the meetings"
+    }
+   ],
+   "mood": "think"
+  },
+  {
+   "type": "cartoon",
+   "label": "The catch",
+   "caption": "Every one of them has a moment where a **wrong guess costs you**.",
+   "scene": "Phoney the blue phone character carefully balances on a tightrope over a small pond holding a long pole, with an envelope, a ticket and a calendar page balanced on each end; crocodiles made of cartoon question marks peek out of the water below, grinning."
+  },
+  {
+   "type": "versus",
+   "title": "Where the yes goes",
+   "left": {
+    "label": "🤖 It can just do",
+    "mood": "happy",
+    "text": "Drafts, sorts, works out, reminds."
+   },
+   "right": {
+    "label": "✋ It asks first",
+    "mood": "think",
+    "text": "Anything public, costly or permanent."
+   }
+  },
+  {
+   "type": "moral",
+   "text": "Which job would you hand over first, and where would you make it ask?",
+   "mood": "wink",
+   "pose": "wave"
+  }
+ ]
+}

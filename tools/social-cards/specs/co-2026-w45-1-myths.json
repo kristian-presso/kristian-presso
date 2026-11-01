@@ -1,0 +1,44 @@
+{
+ "key": "co-2026-w45-1-myths",
+ "brand": "co",
+ "kind": "infographic",
+ "slides": [
+  {
+   "type": "infographic",
+   "kicker": "Green tick, myth-busted",
+   "title": "5 lies a **green tick** tells you",
+   "scene": "Corey the sprout proudly polishes a giant shiny green tick trophy on a pedestal, beaming, while behind the pedestal, unseen by him, a row of empty chairs labelled with nothing sits in a dusty exam hall where nobody turned up to sit the test. Dry, funny, bright.",
+   "layout": "compare",
+   "items": [
+    {
+     "label": "Green",
+     "bad": "Green means it worked.",
+     "good": "Green means everything that ran, passed."
+    },
+    {
+     "label": "Quiet",
+     "bad": "No alerts, so all is fine.",
+     "good": "Ask a second question: did anything actually happen?"
+    },
+    {
+     "label": "Exit",
+     "bad": "Pass or fail is enough.",
+     "good": "Three answers: it ran, it never ran, I could not tell."
+    },
+    {
+     "label": "Fix",
+     "bad": "Build a smarter check.",
+     "good": "Add a separate, boring one that only asks if the first fired."
+    },
+    {
+     "label": "Tests",
+     "bad": "My test passed, so it works.",
+     "good": "A test can pass for the wrong reason. Check what it expected."
+    }
+   ],
+   "mood": "smug",
+   "pose": "point",
+   "save": "💾 Save this for your next \"all green\" stand-up"
+  }
+ ]
+}

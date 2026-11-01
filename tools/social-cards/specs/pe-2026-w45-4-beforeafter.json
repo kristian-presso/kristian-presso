@@ -1,0 +1,68 @@
+{
+ "key": "pe-2026-w45-4-beforeafter",
+ "brand": "pe",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Two AI tools",
+   "title": "One tells you **what it can't do**",
+   "sub": "Guess which one we'd let near your customers.",
+   "scene": "At a market stall, a flashy salesman in a shiny suit holds up a gadget sparkling with fake glitter while Phoney the blue phone character stands at the next stall behind a plain, tidy box with a short handwritten-looking list pinned to it (abstract scribbles only); a shopper looks back and forth suspiciously between them."
+  },
+  {
+   "type": "versus",
+   "title": "Before vs after",
+   "left": {
+    "label": "❌ The shiny one",
+    "mood": "shock",
+    "text": "Claims it does everything. Tested on real customers. Forgotten after launch."
+   },
+   "right": {
+    "label": "✅ The boring one",
+    "mood": "happy",
+    "text": "Lists what it doesn't do yet. Tested on made-up data first. Watched after launch."
+   }
+  },
+  {
+   "type": "cartoon",
+   "label": "Before",
+   "caption": "Testing on real people is how you find out **in public**.",
+   "scene": "A cheerful cartoon robot carries a towering cake into a packed party, and the cake is visibly about to topple onto the guests; the guests duck in slow motion, one lifting a plate as a shield. Slapstick, bright, funny, no text."
+  },
+  {
+   "type": "cartoon",
+   "label": "After",
+   "caption": "A **staging copy** with made-up data takes the fall instead.",
+   "scene": "Phoney the blue phone character calmly tests a wobbly cake in an empty rehearsal room full of cardboard cut-out guests; the cake falls over onto a cut-out, and Phoney the blue phone character shrugs, taking a note on a clipboard, entirely unbothered."
+  },
+  {
+   "type": "list",
+   "label": "Our four rules",
+   "items": [
+    {
+     "emoji": "🧪",
+     "title": "Staging first, every time"
+    },
+    {
+     "emoji": "✋",
+     "title": "Your AI asks before anything that matters"
+    },
+    {
+     "emoji": "📋",
+     "title": "Each app says what it cannot do"
+    },
+    {
+     "emoji": "🔧",
+     "title": "We run what we build"
+    }
+   ],
+   "mood": "think"
+  },
+  {
+   "type": "moral",
+   "text": "A tool that claims to do everything is advertising, not a tool.",
+   "mood": "wink",
+   "save": "💾 Save this for your next software demo"
+  }
+ ]
+}

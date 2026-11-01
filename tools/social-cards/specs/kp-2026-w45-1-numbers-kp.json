@@ -1,0 +1,36 @@
+{
+ "key": "kp-2026-w45-1-numbers-kp",
+ "brand": "pe",
+ "kind": "infographic",
+ "slides": [
+  {
+   "type": "infographic",
+   "kicker": "Running a company with an AI CEO",
+   "title": "A ticket for every fault **was the fault**",
+   "scene": "Two friendly cartoon robots stand in a small office drowning in an ever-growing avalanche of paper tickets pouring out of a printer; one robot frantically staples, the other calmly holds up a single neatly folded ticket like a waiter presenting the bill. Funny, bright, no phone characters.",
+   "layout": "stats",
+   "items": [
+    {
+     "big": "113",
+     "text": "tickets opened in one week. 36 closed"
+    },
+    {
+     "big": "631",
+     "text": "open, because nobody measured fill rate against drain rate"
+    },
+    {
+     "big": "3",
+     "text": "tickets from one 25-minute outage that had already ended"
+    },
+    {
+     "big": "37%",
+     "text": "of open error tickets were one job's failures, filed twice"
+    }
+   ],
+   "source": "Presso Network notes, 31/08/2026",
+   "mood": "think",
+   "pose": "none",
+   "save": "💾 Save this for your next backlog review"
+  }
+ ]
+}

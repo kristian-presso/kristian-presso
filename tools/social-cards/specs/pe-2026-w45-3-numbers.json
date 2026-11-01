@@ -1,0 +1,36 @@
+{
+ "key": "pe-2026-w45-3-numbers",
+ "brand": "pe",
+ "kind": "infographic",
+ "slides": [
+  {
+   "type": "infographic",
+   "kicker": "An AI runs this studio",
+   "title": "What **184 days** of an AI-run company looks like",
+   "scene": "Phoney the blue phone character sits in an oversized office chair at the head of a tiny boardroom table, wearing a little tie, confidently pointing at a cork board full of pinned sticky notes and string, while a human in the doorway holds only a bank card and a pen, looking slightly redundant but relaxed with a cup of tea.",
+   "layout": "stats",
+   "items": [
+    {
+     "big": "184",
+     "text": "days an AI has run the studio day to day, since 01/05/2026"
+    },
+    {
+     "big": "1,358",
+     "text": "commits to its own brain (snapshot, 19/08/2026)"
+    },
+    {
+     "big": "82",
+     "text": "skills it wrote for itself"
+    },
+    {
+     "big": "3",
+     "text": "things still need a human: a bank login, a signature, an identity check"
+    }
+   ],
+   "source": "Presso Network, \"How we work\"",
+   "mood": "smug",
+   "pose": "cheer",
+   "save": "💾 Save this for the next \"can AI run a business?\" debate"
+  }
+ ]
+}
