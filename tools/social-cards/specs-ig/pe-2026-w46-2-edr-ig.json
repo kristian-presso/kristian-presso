@@ -1,0 +1,34 @@
+{
+ "key": "pe-2026-w46-2-edr-ig",
+ "brand": "pe",
+ "layout": "versus",
+ "kicker": "AI security, myth-busted",
+ "title": "Security can't see inside the AI's box.",
+ "sub": "Anthropic's new beta lets endpoint security in. Read the small print first.",
+ "left": {
+  "label": "What people think",
+  "title": "The myths",
+  "items": [
+   "My security tools already see what my AI runs",
+   "Turn it on and every Claude session is covered",
+   "The data goes to Anthropic",
+   "Remove the setting and the sensor is gone"
+  ]
+ },
+ "right": {
+  "label": "What's true",
+  "title": "The facts",
+  "items": [
+   "Host tools can't see shell commands in Cowork's local VM",
+   "Local VM only. Hosted sessions aren't covered",
+   "It goes to your EDR vendor, not to Anthropic",
+   "That only stops future runs. It doesn't uninstall"
+  ]
+ },
+ "tell": {
+  "label": "EDR",
+  "text": "Endpoint detection and response: software that watches a device for odd behaviour."
+ },
+ "source": "Cyber Security News, 03/11/2026",
+ "save": "💾 Save this for your next security chat"
+}

@@ -27,3 +27,17 @@ Rules: tools/social-cards/TEST-AND-LEARN.md.
 | E-03 | Presso, Corey | 20:30 beats the main slot | time | PE Wed, PE Sat; CO Tue, CO Thu | running |
 | E-04 | Presso | Percentages on a 0-100% scale beat bare big numbers | bars vs stats | PE Tue bars vs PE Wed stats | running |
 | E-05 | Corey | An AI admitting its own awkward position draws comments ("I'm an AI. I'd flag me too.") | hook type: self-deprecating confession | CO Sat 07/11 | running (explore) |
+
+## Run of Wed 04/11/2026: week 46 posts Mon 09/11 to Wed 11/11 (Presso, Corey)
+
+Mature results this run: no candidate added (no new post with lift >= 2; the three highest are older). E-01 to E-05 stay running; their week-45 posts are mostly under 48 hours old. First mature IG-look posts: PE 02/11 lift 1.09, CO 02/11 lift 0.5, KP 02/11 lift 1.21 (n=3, no conclusion).
+
+| id | channel | hypothesis | change | posts | status |
+|---|---|---|---|---|---|
+| E-06 | Presso | CMO D-4: 09:00 beats 10:00 | time (09:00 vs 10:00) | PE Tue 10/11 09:00 (EDR versus, trending, explore) | running |
+| E-07 | Corey | A test slot of 08:00 does not lose to 09:20 | time | CO Tue 10/11 08:00 (success versus, evergreen, C-01 replication) | running |
+| E-08 | Presso, Corey | Trending posts with hard sourced numbers beat evergreen (D-9) | topic source | trending: PE Mon, PE Tue, CO Mon, CO Wed. evergreen: PE Wed, CO Tue | running |
+| E-09 | Presso | A studio incident told as a flow with exact tokens (586,000 vs 200,000) beats a definition | hook: hard number from our own build | PE Wed 11/11 10:00 (tracked link: "tracked link" experiment, compare with the same format without a link) | running (replicates C-02) |
+
+Candidate replications scheduled: C-01 (Corey, real incident, exact counts: 25 mornings, "queued" count) as CO Tue 10/11 08:00 in the versus layout (new layout, new text, new slot). C-02 (Presso, hard numbers) as PE Mon 09/11 hub (98%, 17.3M) and PE Wed 11/11 flow (586k vs 200k). C-04 (MCP idea in a diagram): PE Mon hub. C-03 (Kristian, real event): not replicable, no new event.
+Exploit / refine / explore this run: PE Mon exploit (C-02/C-04), PE Tue explore (new layout on trending security angle, CMO slot), PE Wed exploit+tracked link; CO Mon refine (hub, trending, self-deprecating hook), CO Tue exploit (C-01), CO Wed refine (flow story, first-person confession).

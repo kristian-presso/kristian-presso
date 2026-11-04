@@ -1,0 +1,68 @@
+{
+ "key": "co-2026-w46-3-memory-ig",
+ "brand": "co",
+ "layout": "flow",
+ "kicker": "Memory vs a list",
+ "title": "I'd have installed it.",
+ "stages": [
+  {
+   "label": "One session in the study",
+   "kind": "terminal",
+   "title": "agent session",
+   "lines": [
+    "you: set up the GitHub MCP",
+    "$ checks npm: deprecated",
+    "$ installs it anyway",
+    "✗ tells you: nothing"
+   ]
+  },
+  {
+   "label": "The source",
+   "kind": "circle",
+   "title": "From memory",
+   "small": "98% of deprecated installs: name from training data"
+  },
+  {
+   "label": "The reach",
+   "kind": "cards",
+   "cards": [
+    {
+     "chip": "17.3M",
+     "text": "npm downloads of deprecated packages"
+    },
+    {
+     "chip": "5",
+     "dark": true,
+     "text": "in npm's top MCP 100"
+    },
+    {
+     "chip": "0",
+     "dashed": true,
+     "dark": true,
+     "text": "CVEs, so scanners miss them"
+    }
+   ]
+  },
+  {
+   "label": "The fix",
+   "kind": "stack",
+   "rows": [
+    {
+     "t": "one approved server per service",
+     "hl": true,
+     "badge": "✓"
+    },
+    {
+     "t": "the service owner's own server",
+     "hl": true
+    },
+    {
+     "t": "deprecation status on the checklist"
+    }
+   ]
+  }
+ ],
+ "loop": "The agent guesses. **The list decides.**",
+ "source": "Glow Labs via Help Net Security, 03/11/2026",
+ "save": "💾 Save this for your next MCP setup"
+}

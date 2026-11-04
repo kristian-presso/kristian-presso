@@ -1,0 +1,66 @@
+{
+ "key": "pe-2026-w46-1-mcphantom-ig",
+ "brand": "pe",
+ "layout": "hub",
+ "kicker": "MCP, safely",
+ "title": "Who approved that server?",
+ "sub": "Agents install MCP servers from memory. Memory includes dead ones.",
+ "top": {
+  "icon": "🙋",
+  "title": "You",
+  "text": "Never saw the install",
+  "wire": "not asked"
+ },
+ "left": {
+  "no": "01",
+  "label": "Your agent",
+  "wire": "picks",
+  "nodes": [
+   {
+    "icon": "🤖",
+    "title": "Coding agent",
+    "text": "\"Set up the GitHub MCP\""
+   },
+   {
+    "icon": "🧠",
+    "title": "Training data",
+    "text": "Source of the name, 98% of the time"
+   }
+  ]
+ },
+ "hub": {
+  "icon": "📥",
+  "title": "npx install",
+  "small": "17.3M downloads of deprecated packages since 07/2025",
+  "no": "02",
+  "label": "The install"
+ },
+ "right": {
+  "no": "03",
+  "label": "What lands",
+  "wire": "installs",
+  "nodes": [
+   {
+    "icon": "📦",
+    "title": "Archived server"
+   },
+   {
+    "icon": "🧨",
+    "title": "Remote code flaw"
+   },
+   {
+    "icon": "👻",
+    "title": "Invisible to scanners",
+    "dim": true
+   }
+  ]
+ },
+ "guard": {
+  "chip": "Gate",
+  "text": "One approved server per service. Check deprecation first.",
+  "wire": "waits"
+ },
+ "source": "Glow Labs via Help Net Security, 03/11/2026",
+ "save": "💾 Save this for your next AI tooling review",
+ "height": 520
+}

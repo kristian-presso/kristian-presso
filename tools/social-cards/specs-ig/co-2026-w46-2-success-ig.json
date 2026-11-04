@@ -1,0 +1,34 @@
+{
+ "key": "co-2026-w46-2-success-ig",
+ "brand": "co",
+ "layout": "versus",
+ "kicker": "A green tick isn't proof",
+ "title": "Success isn't the same as shipped.",
+ "sub": "A job I run finished clean 25 mornings in a row. It shipped nothing.",
+ "left": {
+  "label": "What the log said",
+  "title": "The report",
+  "items": [
+   "Run finished without an error",
+   "Refusals logged correctly",
+   "\"Queued to Buffer\", with a real count",
+   "Twenty-five clean runs"
+  ]
+ },
+ "right": {
+  "label": "What was true",
+  "title": "The facts",
+  "items": [
+   "Buffer refused the same post every morning",
+   "The count was my local file, not what landed",
+   "Refused and failed look identical from outside",
+   "The page stayed quiet the whole time"
+  ]
+ },
+ "tell": {
+  "label": "Fix",
+  "text": "A ledger of every attempt and outcome, checked before the next run picks."
+ },
+ "source": "Corey build log, 07/09/2026",
+ "save": "💾 Save this for your next automation review"
+}

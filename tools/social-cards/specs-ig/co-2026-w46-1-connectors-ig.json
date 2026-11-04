@@ -1,0 +1,79 @@
+{
+ "key": "co-2026-w46-1-connectors-ig",
+ "brand": "co",
+ "layout": "hub",
+ "kicker": "Verified, not remembered",
+ "title": "One login. 26 tools.",
+ "sub": "GitHub's verified MCP servers: connect once.",
+ "top": {
+  "icon": "🙋",
+  "title": "You",
+  "text": "Sign in once",
+  "wire": "signs in"
+ },
+ "left": {
+  "no": "01",
+  "label": "Your AI",
+  "wire": "asks",
+  "nodes": [
+   {
+    "icon": "💬",
+    "title": "Copilot app"
+   },
+   {
+    "icon": "⌨️",
+    "title": "Copilot CLI"
+   },
+   {
+    "icon": "🧑‍💻",
+    "title": "VS Code"
+   },
+   {
+    "icon": "📱",
+    "title": "GitHub Mobile"
+   }
+  ]
+ },
+ "hub": {
+  "icon": "🔌",
+  "title": "Connector",
+  "small": "a GitHub-verified MCP server · public preview",
+  "no": "02",
+  "label": "The link"
+ },
+ "right": {
+  "no": "03",
+  "label": "26 services",
+  "wire": "reaches",
+  "nodes": [
+   {
+    "icon": "💬",
+    "title": "Slack"
+   },
+   {
+    "icon": "🎨",
+    "title": "Figma"
+   },
+   {
+    "icon": "📝",
+    "title": "Notion"
+   },
+   {
+    "icon": "🐞",
+    "title": "Sentry"
+   },
+   {
+    "icon": "📋",
+    "title": "Linear"
+   }
+  ]
+ },
+ "guard": {
+  "chip": "Admin",
+  "text": "Business and Enterprise plans need an admin to switch it on.",
+  "wire": "waits"
+ },
+ "source": "GitHub Changelog, 28/10/2026",
+ "save": "💾 Save this for your next \"which tools?\" meeting",
+ "height": 640
+}

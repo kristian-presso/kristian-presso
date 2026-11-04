@@ -1,0 +1,69 @@
+{
+ "key": "pe-2026-w46-3-tokens-ig",
+ "brand": "pe",
+ "layout": "flow",
+ "kicker": "Studio build story",
+ "title": "586,000 tokens before hello.",
+ "stages": [
+  {
+   "label": "The job",
+   "kind": "terminal",
+   "title": "unattended job",
+   "lines": [
+    "$ start nightly job",
+    "✓ connectors loaded",
+    "✗ 586,000 tokens of setup",
+    "✗ context limit: 200,000",
+    "you: so what was the task?"
+   ]
+  },
+  {
+   "label": "The cause",
+   "kind": "circle",
+   "title": "Menu first",
+   "small": "every tool arrives with a name, a description and a schema"
+  },
+  {
+   "label": "The sums",
+   "kind": "cards",
+   "cards": [
+    {
+     "chip": "586k",
+     "text": "tokens of connector setup"
+    },
+    {
+     "chip": "200k",
+     "dark": true,
+     "text": "the context limit"
+    },
+    {
+     "chip": "0",
+     "dashed": true,
+     "dark": true,
+     "text": "tasks the model read"
+    }
+   ]
+  },
+  {
+   "label": "The fix",
+   "kind": "stack",
+   "rows": [
+    {
+     "t": "load only what the job needs",
+     "hl": true,
+     "badge": "✓"
+    },
+    {
+     "t": "fewer, better tools",
+     "hl": true
+    },
+    {
+     "t": "one tool per question asked"
+    }
+   ]
+  }
+ ],
+ "loop": "Wrap the **job**, not the endpoint.",
+ "source": "Presso Network notes, 28/09/2026",
+ "save": "💾 Save this before you build an MCP server"
+}
