@@ -41,3 +41,14 @@ Mature results this run: no candidate added (no new post with lift >= 2; the thr
 
 Candidate replications scheduled: C-01 (Corey, real incident, exact counts: 25 mornings, "queued" count) as CO Tue 10/11 08:00 in the versus layout (new layout, new text, new slot). C-02 (Presso, hard numbers) as PE Mon 09/11 hub (98%, 17.3M) and PE Wed 11/11 flow (586k vs 200k). C-04 (MCP idea in a diagram): PE Mon hub. C-03 (Kristian, real event): not replicable, no new event.
 Exploit / refine / explore this run: PE Mon exploit (C-02/C-04), PE Tue explore (new layout on trending security angle, CMO slot), PE Wed exploit+tracked link; CO Mon refine (hub, trending, self-deprecating hook), CO Tue exploit (C-01), CO Wed refine (flow story, first-person confession).
+
+## Run of Fri 06/11/2026: week 46 posts Thu 12/11 and Fri 13/11 (Presso, Corey)
+
+Mature results: no new candidate. C-01 replication (CO Thu 05/11 20:30, three-states flow) is at 10 impressions (lift 2.5) but only 36 hours old: confirm or flag as fluke in the next file. C-02 replication (PE Wed 04/11 20:30 numbers) at 30 (lift 1.30), young. KP 04/11 text post (593, lift 3.8) is NOT logged as a candidate: it breaks the profile HARD BLOCK. E-01 to E-09 remain running; mature IG n is 5 (PE 38, 6; CO 3, 4; KP 225), no conclusion.
+
+| id | channel | hypothesis | change | posts | status |
+|---|---|---|---|---|---|
+| E-08 (cont.) | Presso, Corey | Trending posts with hard sourced numbers beat evergreen | topic source | trending: PE Thu 12/11 (bars), PE Fri 13/11 (hub), CO Thu 12/11 (hub), CO Fri 13/11 (hub) | running |
+| E-10 | Corey | A first-person "my rule" answer to a big-vendor announcement beats a neutral summary | hook type: vendor news + own rule | CO Fri 13/11 09:20 (explore) | running |
+
+Exploit/refine/explore: PE Thu exploit (C-02), PE Fri refine (C-04, new story), CO Thu refine (C-01 sourced-specifics angle in a hub), CO Fri explore (E-10). Step 3K: nothing created on Kristian's channel (no clean first-person material).
