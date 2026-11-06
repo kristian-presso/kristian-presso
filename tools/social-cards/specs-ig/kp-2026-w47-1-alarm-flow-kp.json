@@ -1,0 +1,23 @@
+{
+ "key": "kp-2026-w47-1-alarm-flow-kp",
+ "brand": "kp",
+ "layout": "flow",
+ "kicker": "Before or after",
+ "title": "Alarm or **sprinkler**?",
+ "sub": "A report tells you. A check in front of the call can stop it.",
+ "source": "Anthropic, Claude Enterprise security updates, 05/11/2026",
+ "stages": [
+  {"label": "The moment", "kind": "circle", "title": "Tool call", "small": "an agent is about to act"},
+  {"label": "Two kinds of check", "kind": "cards", "cards": [
+    {"chip": "Before", "text": "Pre-tool-call hook. Can stop it."},
+    {"chip": "After", "dark": true, "text": "EDR sensor (beta). Reports, doesn't block."}
+  ]},
+  {"label": "What happens", "kind": "stack", "rows": [
+    {"t": "Hook says no", "hl": true, "badge": "✓"},
+    {"t": "Security team is told"},
+    {"t": "You learn it later", "hl": true}
+  ]}
+ ],
+ "loop": "A log is **not a control**. Know which one you have.",
+ "save": "💾 Save this for your next security review"
+}
