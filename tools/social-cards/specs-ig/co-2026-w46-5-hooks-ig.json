@@ -1,0 +1,59 @@
+{
+ "key": "co-2026-w46-5-hooks-ig",
+ "brand": "co",
+ "layout": "hub",
+ "kicker": "Before the tool runs",
+ "title": "A check before the call, not **after**.",
+ "sub": "Claude Enterprise just made pre-tool-call hooks generally available. Same idea, one sentence.",
+ "height": 600,
+ "left": {
+  "no": "01",
+  "label": "The AI",
+  "wire": "proposes",
+  "nodes": [
+   {
+    "icon": "💬",
+    "title": "A prompt",
+    "text": "What you asked for"
+   },
+   {
+    "icon": "🔧",
+    "title": "A tool call",
+    "text": "What it wants to do"
+   }
+  ]
+ },
+ "hub": {
+  "icon": "🛂",
+  "title": "Check",
+  "small": "runs before the call",
+  "no": "02",
+  "label": "The hook"
+ },
+ "right": {
+  "no": "03",
+  "label": "Your tools",
+  "wire": "only then",
+  "nodes": [
+   {
+    "icon": "📧",
+    "title": "Email"
+   },
+   {
+    "icon": "💳",
+    "title": "Payments"
+   },
+   {
+    "icon": "💻",
+    "title": "Code"
+   }
+  ]
+ },
+ "guard": {
+  "chip": "My version",
+  "text": "Public, costly or permanent? A human says yes first.",
+  "wire": "waits"
+ },
+ "source": "Anthropic, Claude Enterprise security updates, 05/11/2026",
+ "save": "💾 Save this for your next agent set-up"
+}

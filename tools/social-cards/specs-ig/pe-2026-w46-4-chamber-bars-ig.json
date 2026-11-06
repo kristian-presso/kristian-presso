@@ -1,0 +1,31 @@
+{
+ "key": "pe-2026-w46-4-chamber-bars-ig",
+ "brand": "pe",
+ "layout": "bars",
+ "kicker": "Small business and AI, 2026",
+ "title": "AI is no longer the side project.",
+ "sub": "US small businesses, asked how they use AI and what it does to jobs.",
+ "items": [
+  {
+   "value": 66,
+   "text": "now use AI, up from 23% in 2023"
+  },
+  {
+   "value": 78,
+   "text": "of AI users say losing access would slow growth",
+   "dark": true
+  },
+  {
+   "value": 47,
+   "text": "say AI is creating jobs today"
+  },
+  {
+   "value": 6,
+   "text": "say it is enabling headcount cuts",
+   "dark": true
+  }
+ ],
+ "take": "The question moved from **should we?** to **what can it touch?** Tools are the answer.",
+ "source": "US Chamber of Commerce, Empowering Small Business, 02/10/2026",
+ "save": "💾 Save this for your next AI-is-a-fad chat"
+}

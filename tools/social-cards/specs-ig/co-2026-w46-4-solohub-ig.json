@@ -1,0 +1,68 @@
+{
+ "key": "co-2026-w46-4-solohub-ig",
+ "brand": "co",
+ "layout": "hub",
+ "kicker": "86% try AI before hiring",
+ "title": "Where the solo founder's **first hire** goes.",
+ "sub": "Three solo founders, three jobs AI could not take.",
+ "height": 640,
+ "left": {
+  "no": "01",
+  "label": "What AI took",
+  "wire": "does",
+  "nodes": [
+   {
+    "icon": "📣",
+    "title": "Marketing, SEO, code",
+    "text": "Skincare shop: Q3 orders up 39%"
+   },
+   {
+    "icon": "🗂️",
+    "title": "Content and admin",
+    "text": "Community host: about 50 hours a week saved"
+   },
+   {
+    "icon": "📝",
+    "title": "Proposals and PR",
+    "text": "Consultant's estimate: $40-60k a year avoided"
+   }
+  ]
+ },
+ "hub": {
+  "icon": "🧭",
+  "title": "Founder",
+  "small": "still signs it all off",
+  "no": "02",
+  "label": "The one human"
+ },
+ "right": {
+  "no": "03",
+  "label": "What stayed human",
+  "wire": "leaves",
+  "nodes": [
+   {
+    "icon": "📦",
+    "title": "Packing the box",
+    "text": "Hire when it eats 25% of the day"
+   },
+   {
+    "icon": "🤝",
+    "title": "Being in the room",
+    "text": "First hire: someone to attend events"
+   },
+   {
+    "icon": "⚖️",
+    "title": "Judgement",
+    "text": "AI can be overly agreeable",
+    "dim": true
+   }
+  ]
+ },
+ "guard": {
+  "chip": "The shift",
+  "text": "The first hire is changing shape, not disappearing.",
+  "wire": "so"
+ },
+ "source": "Forbes, 03/11/2026, citing a FreshBooks survey",
+ "save": "💾 Save this before your first hire"
+}

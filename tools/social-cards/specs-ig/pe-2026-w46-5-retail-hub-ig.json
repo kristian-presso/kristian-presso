@@ -1,0 +1,64 @@
+{
+ "key": "pe-2026-w46-5-retail-hub-ig",
+ "brand": "pe",
+ "layout": "hub",
+ "kicker": "A second front door",
+ "title": "The admin dashboard just got a **new door**.",
+ "sub": "A retail platform opened its stores to Claude and ChatGPT through MCP.",
+ "height": 740,
+ "top": {
+  "icon": "🙋",
+  "title": "Retailer",
+  "text": "\"Create a 15% code, ends this month\"",
+  "wire": "asks"
+ },
+ "left": {
+  "no": "01",
+  "label": "Any AI",
+  "wire": "connects",
+  "nodes": [
+   {
+    "icon": "🤖",
+    "title": "Claude or ChatGPT",
+    "text": "Any AI with custom connectors"
+   }
+  ]
+ },
+ "hub": {
+  "icon": "🔌",
+  "title": "MCP connector",
+  "small": "sign in with the store, not the AI",
+  "no": "02",
+  "label": "OAuth 2.1"
+ },
+ "right": {
+  "no": "03",
+  "label": "The store",
+  "wire": "acts",
+  "nodes": [
+   {
+    "icon": "🛍️",
+    "title": "Products and promos",
+    "text": "Create and update"
+   },
+   {
+    "icon": "👥",
+    "title": "Customers, categories",
+    "text": "Search and edit"
+   },
+   {
+    "icon": "📦",
+    "title": "Orders, carts, stock",
+    "text": "Read-only",
+    "dim": true
+   }
+  ]
+ },
+ "guard": {
+  "chip": "Gate",
+  "text": "You review any proposed change before it is made.",
+  "wire": "waits"
+ },
+ "source": "Virid press release, 28/10/2026",
+ "save": "💾 Save this for your next shop review"
+}
