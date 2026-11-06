@@ -1,0 +1,47 @@
+{
+ "key": "kp-2026-w46-4-exit-flow-kp",
+ "brand": "kp",
+ "layout": "flow",
+ "kicker": "When a tool gets bought",
+ "title": "Where does your work **live**?",
+ "source": "Conductor announcement, Nov 2026",
+ "stages": [
+  {
+   "label": "The announcement",
+   "kind": "terminal",
+   "title": "conductor joins meta",
+   "lines": [
+    "✓ dates given in advance",
+    "✓ refund for subscribers",
+    "✓ export path published",
+    "you: and your own copy?"
+   ]
+  },
+  {
+   "label": "The clock",
+   "kind": "cards",
+   "cards": [
+    {"chip": "04/11", "text": "No new sign-ups."},
+    {"chip": "13/11", "dark": true, "text": "Cloud read-only."},
+    {"chip": "20/11", "dashed": true, "dark": true, "text": "Cloud data deleted."}
+   ]
+  },
+  {
+   "label": "The question",
+   "kind": "circle",
+   "title": "Can I leave?",
+   "small": "in a format something else reads"
+  },
+  {
+   "label": "What I'd check first",
+   "kind": "stack",
+   "rows": [
+    {"t": "Export it today", "hl": true},
+    {"t": "Keep a copy on your disk"},
+    {"t": "Name the fallback", "hl": true}
+   ]
+  }
+ ],
+ "loop": "Good exits happen. **Your copy** is still your job.",
+ "save": "💾 Save this for your next tool audit"
+}

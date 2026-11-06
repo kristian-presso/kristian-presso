@@ -1,0 +1,62 @@
+{
+ "key": "kp-2026-w46-1-memory-hub-kp",
+ "brand": "kp",
+ "layout": "hub",
+ "kicker": "Agents and MCP servers",
+ "title": "Who picked that **package**?",
+ "sub": "98% of the time, the model supplied the name.",
+ "source": "Glow Labs via Help Net Security, 03/11/2026",
+ "left": {
+  "no": "01",
+  "label": "You ask",
+  "wire": "asks",
+  "nodes": [
+   {
+    "icon": "🙋",
+    "title": "Set up the GitHub MCP server"
+   },
+   {
+    "icon": "🤐",
+    "title": "No package named",
+    "dim": true
+   }
+  ]
+ },
+ "hub": {
+  "icon": "🧠",
+  "title": "Model memory",
+  "small": "training data, no deprecation feed",
+  "no": "02",
+  "label": "The pick"
+ },
+ "right": {
+  "no": "03",
+  "label": "Installed",
+  "wire": "installs",
+  "nodes": [
+   {
+    "icon": "✅",
+    "title": "GitHub's maintained server"
+   },
+   {
+    "icon": "⚠️",
+    "title": "Deprecated reference server",
+    "text": "4 high-severity flaws",
+    "hl": true
+   },
+   {
+    "icon": "👻",
+    "title": "Your scanners",
+    "text": "A routine install",
+    "dim": true
+   }
+  ]
+ },
+ "guard": {
+  "chip": "Check",
+  "text": "An approved server list, pinned names and an install log.",
+  "wire": "waits"
+ },
+ "save": "💾 Save this for your next agent set-up",
+ "height": 520
+}
