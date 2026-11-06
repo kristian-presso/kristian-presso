@@ -59,3 +59,5 @@ No new mature posts. First posts under the 06/11 first-person-opinion rule for h
 |---|---|---|---|---|---|
 | E-11 | Kristian | A first-person "my read / what I'd check first" opinion on a public trending story, in a diagram infographic, holds his median (184) without any company material | topic source + format (explore) | KP Mon 09/11 hub (MCPhantom), KP Thu 12/11 flow (Conductor exit); keys end -kp | running |
 Exploit/refine/explore: both explore (new rule, no clean past winner; C-04 MCP-diagram angle reused for Monday as refine of C-04). C-03 not replicable.
+
+E-11 addendum (fri2 firing): third post KP Mon 16\/11 09:00 flow (hooks vs EDR, Anthropic 05\/11), explore.
