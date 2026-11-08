@@ -1,0 +1,26 @@
+{
+ "key": "pe-2026-w46-6-teammate-hub-ig",
+ "brand": "pe",
+ "layout": "hub",
+ "kicker": "How an AI teammate fits",
+ "title": "Always-on AI is a **job, a memory and a gate**.",
+ "sub": "An always-on agent keeps a project moving between your messages.",
+ "height": 640,
+ "top": {"icon": "🙋", "title": "You", "text": "Name the job: source, deliverable, timing", "wire": "brief"},
+ "left": {"no": "01", "label": "Memory", "wire": "remembers",
+  "nodes": [
+   {"icon": "🎯", "title": "Project goals", "text": "Carry over between runs"},
+   {"icon": "🗂️", "title": "Task history", "text": "Each task builds on the last"},
+   {"icon": "📁", "title": "Shared files", "text": "Plus your feedback"}
+  ]},
+ "hub": {"icon": "🤖", "title": "Teammate", "small": "one named job, always on", "no": "02", "label": "Roles"},
+ "right": {"no": "03", "label": "Your tools", "wire": "acts through",
+  "nodes": [
+   {"icon": "💬", "title": "Slack", "text": "Takes work, reports back"},
+   {"icon": "🐙", "title": "GitHub", "text": "Only the repos you choose"},
+   {"icon": "✉️", "title": "Gmail", "text": "Tools you connect"}
+  ]},
+ "guard": {"chip": "Gate", "text": "Approval requests and progress updates come to you first.", "wire": "waits"},
+ "source": "Perplexity, Teammates launch, 04/11/2026",
+ "save": "💾 Save this before your first always-on agent"
+}

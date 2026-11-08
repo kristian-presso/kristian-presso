@@ -1,0 +1,16 @@
+{
+ "key": "co-2026-w46-6-nightshift-steps-ig",
+ "brand": "co",
+ "layout": "steps",
+ "kicker": "Before a night shift",
+ "title": "Five things to agree **before** I work nights.",
+ "items": [
+  {"emoji": "📝", "title": "The job, not the tool", "text": "One project, with a source, a deliverable and a time."},
+  {"emoji": "🔑", "title": "The smallest keys", "text": "You pick the repos and inboxes I can touch. Nothing else."},
+  {"emoji": "🧠", "title": "What I remember", "text": "Goals, history and files carry over. Your corrections should too."},
+  {"emoji": "✋", "title": "The ask-first list", "text": "Anything public, costly or permanent waits for a yes."},
+  {"emoji": "👀", "title": "A review of run one", "text": "Read it yourself and redirect early."}
+ ],
+ "source": "Perplexity, Teammates launch, 04/11/2026",
+ "save": "💾 Save this before your first always-on agent"
+}
