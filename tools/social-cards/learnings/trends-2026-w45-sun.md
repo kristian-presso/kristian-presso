@@ -1,0 +1,8 @@
+# Trends, Sunday 08/11/2026 (week 45)
+
+Read in full (200): 
+1. Perplexity Teammates, https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work. Launched 04/11/2026. Persistent agents for ongoing work; remember goals, task history, shared files across runs; inherit Computer's tool and Project permissions; separate environment per teammate; approval requests and progress updates; users choose which GitHub repos; web first, iOS soon for Max; no numeric limits or pricing on the page. USED: PE Sat 14/11 (hub, "we"), CO Sat 14/11 (steps, "I").
+2. MCPhantom (Help Net Security 03/11): already used by PE Mon 09/11 and CO Wed 11/11, not reused.
+Seen via secondary roundups only (primary pages could not be fetched here, so NOT used): Claude Code 2.1.319 (MCP server tasks to background, permissions.denyInsteadOfPrompting); Cloudflare security-audit-skill (six phases, fresh verifier tries to disprove each finding); Cursor Live Apps; Hightouch hybrid LLM judging; DeepMind RSA 1024-bit findings; Firecracker escape (PWN Research).
+Niche resonance (Sunday scan, general LinkedIn format studies from search results, unverified): documents/carousels and clear single-image visuals are reported to out-reach text; we keep single-image infographics. No new format adopted; explore ideas to try next run: a "versus" using Claude Code's deny-instead-of-prompt setting once its release page can be read, and the verifier-that-tries-to-disprove pattern as a Corey flow.
+Kristian's channel: no new post written; topics for the next 3K run: Perplexity Teammates permissions as a first-person read, background MCP tasks.

@@ -61,3 +61,11 @@ No new mature posts. First posts under the 06/11 first-person-opinion rule for h
 Exploit/refine/explore: both explore (new rule, no clean past winner; C-04 MCP-diagram angle reused for Monday as refine of C-04). C-03 not replicable.
 
 E-11 addendum (fri2 firing): third post KP Mon 16\/11 09:00 flow (hooks vs EDR, Anthropic 05\/11), explore.
+
+## Run of Sun 08/11/2026: Saturday 14/11 (Presso, Corey)
+Mature results: C-01 CONFIRMED (CO 05/11 20:30 flow, 13 impressions, lift 3.25 vs 1.3 bar; tiny n, treat as weak). New candidate C-05 (PE Mon 02/11 myths, 40, lift 2.2), replication = PE Tue 10/11 EDR myths (already scheduled, E-06). KP: nothing logged. E-01 to E-11 remain running; no experiment has 3 posts on both arms with a result worth closing.
+| id | channel | hypothesis | change | posts | status |
+|---|---|---|---|---|---|
+| E-12 | Presso | A trending launch told as a hub diagram holds the 08:00 test slot | layout hub + time 08:00 | PE Sat 14/11 08:00 hub | running (refine of C-04) |
+| E-13 | Corey | A first-person "what to agree before I work nights" checklist on a trending launch beats evergreen checklists (CO 06/11 steps got 0) | hook: first-person job-design + trending | CO Sat 14/11 08:00 steps | running (explore) |
+Exploit/refine/explore: PE refine, CO explore. Both trending. KP: no post (3 already scheduled).
