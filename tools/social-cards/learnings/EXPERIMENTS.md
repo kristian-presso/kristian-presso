@@ -69,3 +69,12 @@ Mature results: C-01 CONFIRMED (CO 05/11 20:30 flow, 13 impressions, lift 3.25 v
 | E-12 | Presso | A trending launch told as a hub diagram holds the 08:00 test slot | layout hub + time 08:00 | PE Sat 14/11 08:00 hub | running (refine of C-04) |
 | E-13 | Corey | A first-person "what to agree before I work nights" checklist on a trending launch beats evergreen checklists (CO 06/11 steps got 0) | hook: first-person job-design + trending | CO Sat 14/11 08:00 steps | running (explore) |
 Exploit/refine/explore: PE refine, CO explore. Both trending. KP: no post (3 already scheduled).
+
+## Run of Wed 11/11/2026: Presso and Corey 16/11 to 18/11, Kristian 17/11 to 21/11
+No new mature results read this run (measurement not refreshed, see learnings/2026-w46-wed.md). E-01 to E-13 stay running.
+| id | channel | hypothesis | change | posts | status |
+|---|---|---|---|---|---|
+| E-14 | Presso, Corey | 20:30 beats the main slot (Decision row 38) | time | PE Wed 18/11 20:30 bars, CO Wed 18/11 20:30 flow | running (n now 2 more) |
+| E-15 | Kristian | Publishing test: format x slot x type rotation (Notion plan 11/11/2026, Linear PRE-2026) | format, time, type | KP 17/11 to 21/11 (keys end -kp) | running until 10/01/2027 |
+| E-16 | Corey | An AI co-founder confessing its own error rate ("I write wrong, fluently") draws comments (replicates E-05 hook type) | hook | CO Wed 18/11 | running (explore) |
+Exploit/refine/explore: PE Mon refine (C-04 hub, trending), PE Tue explore (open-source tool type), PE Wed refine (C-02 hard numbers, evening); CO Mon refine (C-01 sourced specifics, hub to flow), CO Tue explore (how-to), CO Wed explore (E-16). Trending: PE Mon, PE Wed, CO Mon, CO Tue. Kristian: all explore under E-11/E-15.
