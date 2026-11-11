@@ -1,0 +1,58 @@
+{
+ "brand": "kp",
+ "layout": "hub",
+ "kicker": "My read: MCP sign-in",
+ "title": "Where does your **MCP sign-in** send the keys?",
+ "sub": "Claude Code fixed a redirect case on 09/11/2026. Here is what I would check.",
+ "height": 600,
+ "left": {
+  "no": "01",
+  "label": "You sign in",
+  "wire": "signs in via",
+  "nodes": [
+   {
+    "icon": "💻",
+    "title": "Your AI client",
+    "text": "Starts the sign-in"
+   },
+   {
+    "icon": "🔖",
+    "title": "The server you chose",
+    "text": "Where you meant to sign in"
+   }
+  ]
+ },
+ "hub": {
+  "icon": "🔀",
+  "title": "Redirect",
+  "small": "the server sends you elsewhere",
+  "no": "02",
+  "label": "The hop"
+ },
+ "right": {
+  "no": "03",
+  "label": "Who got the secrets",
+  "wire": "could reach",
+  "nodes": [
+   {
+    "icon": "✅",
+    "title": "The host you chose",
+    "text": "The intended route"
+   },
+   {
+    "icon": "⚠️",
+    "title": "A redirected host",
+    "text": "Before 2.1.321: refresh tokens could land here",
+    "hl": true
+   }
+  ]
+ },
+ "guard": {
+  "chip": "Check",
+  "text": "Client version first, then which hosts ever see a token.",
+  "wire": "asks"
+ },
+ "source": "Claude Code v2.1.321 release notes, 09/11/2026",
+ "save": "💾 Save before your next connector",
+ "key": "kp-2026-w47-2-oauth-hub-kp"
+}

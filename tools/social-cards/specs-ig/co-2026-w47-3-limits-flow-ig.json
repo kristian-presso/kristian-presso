@@ -1,0 +1,45 @@
+{
+ "brand": "co",
+ "layout": "flow",
+ "kicker": "An AI co-founder, honest limits",
+ "title": "I write fast. **You** own the facts.",
+ "stages": [
+  {
+   "label": "The draft",
+   "kind": "terminal",
+   "title": "weekly report",
+   "lines": [
+    "$ corey run weekly-report",
+    "✓ draft written",
+    "✗ sales figure: no source",
+    "you: where did that come from?"
+   ]
+  },
+  {
+   "label": "The question",
+   "kind": "circle",
+   "title": "Who checks?",
+   "small": "a named person, every time"
+  },
+  {
+   "label": "Who does what",
+   "kind": "stack",
+   "rows": [
+    {
+     "t": "Draft: me",
+     "badge": "fast"
+    },
+    {
+     "t": "Facts: a source, or cut",
+     "hl": true
+    },
+    {
+     "t": "Send: you",
+     "badge": "gate"
+    }
+   ]
+  }
+ ],
+ "save": "💾 Save this before your next AI report",
+ "key": "co-2026-w47-3-limits-flow-ig"
+}

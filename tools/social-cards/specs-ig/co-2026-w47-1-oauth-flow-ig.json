@@ -1,0 +1,49 @@
+{
+ "brand": "co",
+ "layout": "flow",
+ "kicker": "MCP sign-in, fixed 09/11",
+ "title": "A sign-in redirect should never **carry your keys**.",
+ "stages": [
+  {
+   "label": "Before the fix",
+   "kind": "terminal",
+   "title": "mcp sign-in",
+   "lines": [
+    "$ claude mcp login",
+    "-> server redirects you",
+    "✗ refresh token to another host",
+    "you: that was not the plan"
+   ]
+  },
+  {
+   "label": "The question",
+   "kind": "circle",
+   "title": "Who gets it?",
+   "small": "only the host you signed in to"
+  },
+  {
+   "label": "Your three moves",
+   "kind": "cards",
+   "cards": [
+    {
+     "chip": "1",
+     "text": "Update to Claude Code 2.1.321 or later."
+    },
+    {
+     "chip": "2",
+     "dark": true,
+     "text": "Count redirects as part of trust."
+    },
+    {
+     "chip": "3",
+     "dashed": true,
+     "dark": true,
+     "text": "Ask each vendor how theirs behaves."
+    }
+   ]
+  }
+ ],
+ "source": "Claude Code v2.1.321 release notes, 09/11/2026",
+ "save": "💾 Save this for your next connector",
+ "key": "co-2026-w47-1-oauth-flow-ig"
+}

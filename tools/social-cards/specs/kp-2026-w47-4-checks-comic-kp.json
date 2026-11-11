@@ -1,0 +1,60 @@
+{
+ "brand": "kp",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "MCP, before you connect",
+   "title": "Four checks before an AI gets **a key**",
+   "mood": "worried",
+   "pose": "hold"
+  },
+  {
+   "type": "list",
+   "label": "The four checks",
+   "mood": "think",
+   "items": [
+    {
+     "emoji": "👀",
+     "title": "Read or write?",
+     "text": "Start read-only if it exists"
+    },
+    {
+     "emoji": "🔑",
+     "title": "Where does the token go?",
+     "text": "Redirects count"
+    },
+    {
+     "emoji": "🧾",
+     "title": "What can it change?",
+     "text": "List actions, not brand names"
+    },
+    {
+     "emoji": "🧯",
+     "title": "Who switches it off?",
+     "text": "Know before you need it"
+    }
+   ]
+  },
+  {
+   "type": "panel",
+   "label": "Check 1",
+   "caption": "If it can write, I want the list of what it can write.",
+   "mood": "think",
+   "pose": "none"
+  },
+  {
+   "type": "panel",
+   "label": "Check 2, a real one",
+   "caption": "A sign-in redirect once sent refresh tokens elsewhere. Claude Code fixed it on 09/11/2026.",
+   "mood": "shock",
+   "pose": "point"
+  },
+  {
+   "type": "moral",
+   "text": "Connect it like you will have to **undo it**.",
+   "mood": "smug",
+   "save": "💾 Save this before your next connector"
+  }
+ ],
+ "key": "kp-2026-w47-4-checks-comic-kp"
+}

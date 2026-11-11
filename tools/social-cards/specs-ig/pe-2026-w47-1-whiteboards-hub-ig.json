@@ -1,0 +1,74 @@
+{
+ "brand": "pe",
+ "layout": "hub",
+ "kicker": "Where an AI board lands",
+ "title": "A board is only useful if it **lands somewhere**.",
+ "sub": "Claude Whiteboards and Sheets (beta) turn talk into boards and sheets, then hand them on.",
+ "height": 640,
+ "top": {
+  "icon": "🙋",
+  "title": "You",
+  "text": "Say what the board must produce",
+  "wire": "brief"
+ },
+ "left": {
+  "no": "01",
+  "label": "What you give it",
+  "wire": "listens to",
+  "nodes": [
+   {
+    "icon": "🎙️",
+    "title": "A spoken discussion",
+    "text": "Group planning, live"
+   },
+   {
+    "icon": "📝",
+    "title": "Retro notes",
+    "text": "Grouped by theme"
+   },
+   {
+    "icon": "📊",
+    "title": "One prompt",
+    "text": "Becomes a sheet with formulas"
+   }
+  ]
+ },
+ "hub": {
+  "icon": "🧠",
+  "title": "Claude",
+  "small": "Whiteboards and Sheets, beta",
+  "no": "02",
+  "label": "The board"
+ },
+ "right": {
+  "no": "03",
+  "label": "Where it lands",
+  "wire": "hands off to",
+  "nodes": [
+   {
+    "icon": "🧩",
+    "title": "Miro, Lucid, Vani",
+    "text": "Boards you already use"
+   },
+   {
+    "icon": "📋",
+    "title": "Asana, monday",
+    "text": "Plus Airtable, Smartsheet"
+   },
+   {
+    "icon": "📁",
+    "title": "XLSX or CSV",
+    "text": "For the full Excel route",
+    "dim": true
+   }
+  ]
+ },
+ "guard": {
+  "chip": "Gate",
+  "text": "Enterprise: off by default. Admins decide in Artifacts settings.",
+  "wire": "waits"
+ },
+ "source": "Unite.AI on the Anthropic launch, 10/11/2026",
+ "save": "💾 Save before enabling boards",
+ "key": "pe-2026-w47-1-whiteboards-hub-ig"
+}

@@ -1,0 +1,37 @@
+{
+ "brand": "kp",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "MCP, plainly",
+   "title": "Three myths about **MCP**",
+   "mood": "smug",
+   "pose": "point"
+  },
+  {
+   "type": "myth",
+   "myth": "MCP is just another API",
+   "fact": "An API serves developers. MCP tells an AI which tools exist and what each is for.",
+   "mood": "think"
+  },
+  {
+   "type": "myth",
+   "myth": "A connected tool is a safe tool",
+   "fact": "Connecting grants access. What the AI may change is a separate decision.",
+   "mood": "worried"
+  },
+  {
+   "type": "myth",
+   "myth": "The AI will ask before anything risky",
+   "fact": "Only if someone built the gate. Check what your client asks about.",
+   "mood": "shock"
+  },
+  {
+   "type": "moral",
+   "text": "Ask what it **can change**, not what it can do.",
+   "mood": "wink",
+   "save": "💾 Save this for your next MCP chat"
+  }
+ ],
+ "key": "kp-2026-w47-6-myths-comic-kp"
+}
