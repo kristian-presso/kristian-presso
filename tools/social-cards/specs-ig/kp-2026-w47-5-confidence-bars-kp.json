@@ -1,0 +1,28 @@
+{
+ "brand": "kp",
+ "layout": "bars",
+ "kicker": "Confidence and revenue",
+ "title": "Confident owners report **more revenue**. Careful.",
+ "sub": "AI users, positive revenue effect, by confidence. An association, not proof.",
+ "items": [
+  {
+   "value": 23,
+   "big": "23%",
+   "text": "low-confidence owners"
+  },
+  {
+   "value": 54,
+   "big": "54%",
+   "text": "mid-confidence owners"
+  },
+  {
+   "value": 65,
+   "big": "65%",
+   "text": "high-confidence owners"
+  }
+ ],
+ "take": "Confident owners may simply run better businesses.",
+ "source": "Bluehost with ListenLabs, 350 US owners, May 2026",
+ "save": "💾 Save before you quote this",
+ "key": "kp-2026-w47-5-confidence-bars-kp"
+}

@@ -1,0 +1,49 @@
+{
+ "brand": "kp",
+ "layout": "flow",
+ "kicker": "My read: connect read-only first",
+ "title": "Can the MCP server **write**, or only read?",
+ "stages": [
+  {
+   "label": "The server",
+   "kind": "terminal",
+   "title": "ha-mcp",
+   "lines": [
+    "$ connect ha-mcp",
+    "? can it write",
+    "✓ start read-only",
+    "you: then we discuss the heating"
+   ]
+  },
+  {
+   "label": "The question",
+   "kind": "circle",
+   "title": "What can it change?",
+   "small": "ask before you connect"
+  },
+  {
+   "label": "What I'd do",
+   "kind": "cards",
+   "cards": [
+    {
+     "chip": "1",
+     "text": "Start read-only."
+    },
+    {
+     "chip": "2",
+     "dark": true,
+     "text": "Check where the token goes."
+    },
+    {
+     "chip": "3",
+     "dashed": true,
+     "dark": true,
+     "text": "Know the off switch first."
+    }
+   ]
+  }
+ ],
+ "source": "ha-mcp GitHub page, MIT licence, 11/11/2026",
+ "save": "💾 Save before your next MCP server",
+ "key": "kp-2026-w47-2-hamcp-flow-kp"
+}

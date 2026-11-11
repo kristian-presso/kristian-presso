@@ -1,0 +1,62 @@
+{
+ "brand": "pe",
+ "layout": "hub",
+ "kicker": "Before you connect an AI",
+ "title": "Three checks before an AI **touches your lights**.",
+ "sub": "ha-mcp is an open-source MCP server for Home Assistant. Same questions for any connector.",
+ "height": 620,
+ "left": {
+  "no": "01",
+  "label": "Your assistant",
+  "wire": "asks",
+  "nodes": [
+   {
+    "icon": "💬",
+    "title": "Claude, ChatGPT",
+    "text": "Or another assistant"
+   },
+   {
+    "icon": "🙋",
+    "title": "You",
+    "text": "Decide what it may change"
+   }
+  ]
+ },
+ "hub": {
+  "icon": "🔌",
+  "title": "ha-mcp",
+  "small": "MIT licence, open source",
+  "no": "02",
+  "label": "The server"
+ },
+ "right": {
+  "no": "03",
+  "label": "Your home",
+  "wire": "can change",
+  "nodes": [
+   {
+    "icon": "💡",
+    "title": "Lights",
+    "text": "Low stakes"
+   },
+   {
+    "icon": "🌡️",
+    "title": "Heating",
+    "text": "Low stakes, still yours"
+   },
+   {
+    "icon": "⚙️",
+    "title": "Automations",
+    "text": "Configured by the AI"
+   }
+  ]
+ },
+ "guard": {
+  "chip": "Checks",
+  "text": "Read or write? Where does the token go? Who switches it off?",
+  "wire": "first"
+ },
+ "source": "ha-mcp GitHub page, 11/11/2026",
+ "save": "💾 Save before your next connector",
+ "key": "pe-2026-w47-2-hamcp-hub-ig"
+}

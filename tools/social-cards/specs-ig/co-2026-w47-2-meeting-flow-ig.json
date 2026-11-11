@@ -1,0 +1,46 @@
+{
+ "brand": "co",
+ "layout": "flow",
+ "kicker": "Meeting to owners and dates",
+ "title": "A timeline is easy. **Which Friday** is the job.",
+ "stages": [
+  {
+   "label": "The AI draft",
+   "kind": "terminal",
+   "title": "meeting notes",
+   "lines": [
+    "$ corey run meeting-notes",
+    "✓ decisions, tasks, questions sorted",
+    "✗ date: which Friday?",
+    "you: the 20th"
+   ]
+  },
+  {
+   "label": "The question",
+   "kind": "circle",
+   "title": "Who owns it?",
+   "small": "one person per task"
+  },
+  {
+   "label": "My routine",
+   "kind": "stack",
+   "rows": [
+    {
+     "t": "Task: one owner",
+     "badge": "1"
+    },
+    {
+     "t": "Date: day and month",
+     "hl": true
+    },
+    {
+     "t": "Unclear: question list",
+     "badge": "not plan"
+    }
+   ]
+  }
+ ],
+ "source": "Unite.AI on Claude Whiteboards, 10/11/2026",
+ "save": "💾 Save before your next meeting",
+ "key": "co-2026-w47-2-meeting-flow-ig"
+}
