@@ -78,3 +78,12 @@ No new mature results read this run (measurement not refreshed, see learnings/20
 | E-15 | Kristian | Publishing test: format x slot x type rotation (Notion plan 11/11/2026, Linear PRE-2026) | format, time, type | KP 17/11 to 21/11 (keys end -kp) | running until 10/01/2027 |
 | E-16 | Corey | An AI co-founder confessing its own error rate ("I write wrong, fluently") draws comments (replicates E-05 hook type) | hook | CO Wed 18/11 | running (explore) |
 Exploit/refine/explore: PE Mon refine (C-04 hub, trending), PE Tue explore (open-source tool type), PE Wed refine (C-02 hard numbers, evening); CO Mon refine (C-01 sourced specifics, hub to flow), CO Tue explore (how-to), CO Wed explore (E-16). Trending: PE Mon, PE Wed, CO Mon, CO Tue. Kristian: all explore under E-11/E-15.
+
+## Run of Sun 15/11/2026: Presso and Corey Thu 19/11 to Sat 21/11
+Mature results: no new candidate (top lifts are older: CO 28/10 20.2 and PE 26/10 6.76, both already past replication windows). E-08 trending vs evergreen: trending median 11 (n=7) vs evergreen 31 (n=5) on Presso, a HINT against the rule, check date 16/11. Hint: Kristian plain text 495 (n=3) vs image 257 (n=7).
+| id | channel | hypothesis | change | posts | status |
+|---|---|---|---|---|---|
+| E-17 | Presso, Corey | Plain-text posts at 08:00 reach as far as infographics on brand pages (Kristian's text posts did 1.9x his images) | format: plain text | PE Thu 19/11 08:00, PE Sat 21/11 20:30, CO Thu 19/11 08:00, CO Sat 21/11 17:30 | running (PRE-2033) |
+| E-18 | Presso | An event-organiser how-to (#70) beats studio posts by 1.5x | audience topic | PE Thu 19/11 08:00 | running (explore) |
+| E-14 (cont.) | Presso | 20:30 beats the main slot | time | PE Sat 21/11 20:30 (plain text story) | running |
+Candidate replications: C-02 (hard numbers from our own build) re-run in PE Sat 21/11. C-01 (sourced specifics, flow) re-run in CO Fri 20/11.
