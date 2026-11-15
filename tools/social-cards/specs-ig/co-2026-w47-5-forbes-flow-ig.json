@@ -1,0 +1,29 @@
+{
+ "brand": "co",
+ "layout": "flow",
+ "kicker": "AI back office",
+ "title": "An AI back office still has **one boss**.",
+ "sub": "Claude for Small Business drafts the admin. The owner signs it off.",
+ "stages": [
+  {"label": "You connect it", "kind": "cards", "cards": [
+   {"chip": "Money", "text": "QuickBooks, PayPal"},
+   {"chip": "Sales", "text": "HubSpot, Docusign"},
+   {"chip": "Office", "text": "Google Workspace, Microsoft 365"}
+  ]},
+  {"label": "It drafts", "kind": "terminal", "title": "cash forecast", "lines": [
+   "$ claude: 30-day cash forecast",
+   "✓ overdue invoices ranked",
+   "✓ reminders queued",
+   "✗ nothing sent yet"
+  ]},
+  {"label": "You approve", "kind": "circle", "title": "Approve?", "small": "before anything is sent or paid"},
+  {"label": "You answer for it", "kind": "stack", "rows": [
+   {"t": "A person checks the numbers"},
+   {"t": "A person approves each action", "hl": true},
+   {"t": "A person owns the records", "badge": "you"}
+  ]}
+ ],
+ "source": "Forbes, 13/11/2026",
+ "save": "💾 Save before you connect your books",
+ "key": "co-2026-w47-5-forbes-flow-ig"
+}

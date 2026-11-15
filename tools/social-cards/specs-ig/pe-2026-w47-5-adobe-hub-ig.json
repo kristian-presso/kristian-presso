@@ -1,0 +1,32 @@
+{
+ "brand": "pe",
+ "layout": "hub",
+ "kicker": "Bring your own agent",
+ "title": "Adobe opens its apps to **any AI agent**.",
+ "sub": "MCP lets the assistant you already use work inside Photoshop, Premiere and more.",
+ "height": 620,
+ "left": {
+  "no": "01",
+  "label": "Your assistant",
+  "wire": "asks",
+  "nodes": [
+   {"icon": "💬", "title": "Any AI agent", "text": "Your pick, not Adobe's"},
+   {"icon": "🙋", "title": "You", "text": "Step in at any moment"}
+  ]
+ },
+ "hub": {"icon": "🔌", "title": "MCP", "small": "Open standard", "no": "02", "label": "The door"},
+ "right": {
+  "no": "03",
+  "label": "Adobe apps",
+  "wire": "works in",
+  "nodes": [
+   {"icon": "🖼️", "title": "Photoshop, Illustrator", "text": "Layers and vectors stay editable"},
+   {"icon": "🎬", "title": "Premiere", "text": "Bins and sequences stay editable"},
+   {"icon": "✨", "title": "After Effects", "text": "Compositions stay editable"}
+  ]
+ },
+ "guard": {"chip": "Not yet", "text": "Private beta from early 2027. Not live today.", "wire": "status"},
+ "source": "Creative Boom, 10/11/2026",
+ "save": "💾 Save before your next software demo",
+ "key": "pe-2026-w47-5-adobe-hub-ig"
+}
