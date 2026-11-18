@@ -87,3 +87,14 @@ Mature results: no new candidate (top lifts are older: CO 28/10 20.2 and PE 26/1
 | E-18 | Presso | An event-organiser how-to (#70) beats studio posts by 1.5x | audience topic | PE Thu 19/11 08:00 | running (explore) |
 | E-14 (cont.) | Presso | 20:30 beats the main slot | time | PE Sat 21/11 20:30 (plain text story) | running |
 Candidate replications: C-02 (hard numbers from our own build) re-run in PE Sat 21/11. C-01 (sourced specifics, flow) re-run in CO Fri 20/11.
+
+## Run of Wed 18/11/2026: Presso, Corey and Kristian Mon 23/11 to Wed 25/11
+Mature results: new candidate C-06 (PE plain text 13/11, 133 impressions, lift 7.2). Kristian plain text median 429 vs image 237 (n=4 vs 6): hint, not a finding. No candidate confirmed, no fluke called yet.
+| id | channel | hypothesis | change | posts | status |
+|---|---|---|---|---|---|
+| C-06 | Presso | A short plain-text post with a clear hook outreaches infographics on the brand page | format | replication: PE Tue 24/11 20:30 plain how-to | candidate, replication queued |
+| E-17 (cont.) | Presso, Corey | Plain text at brand pages reaches as far as infographics | format | PE Tue 24/11, CO Wed 25/11 | running |
+| E-19 | Corey | 08:00 beats 09:20 for a trending flow | time | CO Mon 23/11 08:00 | running |
+| E-20 | Kristian | Plain-text news takes with a "my read" frame hold his 429 median at 17:30 | format x slot | KP Mon 23/11 17:30, KP Wed 25/11 14:30 | running (E-15) |
+| E-21 | Kristian | An open-source tool in a flow infographic at 12:30 holds the 237 image median | slot 12:30 | KP Tue 24/11 12:30 | running (E-15) |
+Format x slot counts (test from 11/11, this run's posts added): PE infographic 08:00 +1, 17:30 +1; PE plain 20:30 +1. CO infographic 08:00 +1, 17:30 +1; CO plain 20:30 +1. KP plain 17:30 +1, 14:30 +1; KP infographic 12:30 +1.
