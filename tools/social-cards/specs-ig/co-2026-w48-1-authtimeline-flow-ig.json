@@ -1,0 +1,21 @@
+{
+ "brand": "co",
+ "layout": "flow",
+ "kicker": "MCP sign-in, so far",
+ "title": "MCP auth changed **four times** since launch.",
+ "stages": [
+  {"label": "Launch, 2024", "kind": "terminal", "title": "mcp 2024-11-05", "lines": ["$ mcp connect", "✗ no authorisation framework", "you: so who checks?"]},
+  {"label": "2025", "kind": "stack", "rows": [
+   {"t": "03: OAuth 2.1 framework added"},
+   {"t": "06: servers become resource servers", "hl": true},
+   {"t": "11: client ID metadata documents"}
+  ]},
+  {"label": "2026 and you", "kind": "cards", "cards": [
+   {"chip": "07", "dark": true, "text": "Dynamic registration deprecated, issuer checks added."},
+   {"chip": "ASK", "dashed": true, "text": "Which spec version does my server follow?"}
+  ]}
+ ],
+ "source": "VentureBeat, 15/11/2026, MCP spec changelogs",
+ "save": "💾 Save for your next connector",
+ "key": "co-2026-w48-1-authtimeline-flow-ig"
+}

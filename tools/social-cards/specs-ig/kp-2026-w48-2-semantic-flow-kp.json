@@ -1,0 +1,18 @@
+{
+ "brand": "kp",
+ "layout": "flow",
+ "kicker": "Pi, sensors, MCP",
+ "title": "Name tools after **jobs**, not plumbing.",
+ "stages": [
+  {"label": "The wrong way", "kind": "terminal", "title": "raw tools", "lines": ["$ raw sensor register read", "✗ agent must know every sensor", "you: that is a lot of homework"]},
+  {"label": "The right way", "kind": "circle", "title": "Describe the room", "small": "one semantic tool"},
+  {"label": "How it is built", "kind": "cards", "cards": [
+   {"chip": "1", "text": "An ESP32 reads sensors, sends JSON over USB."},
+   {"chip": "2", "dark": true, "text": "The Pi runs the MCP server beside the hardware."},
+   {"chip": "3", "dashed": true, "dark": true, "text": "Still warming up? The reading says so."}
+  ]}
+ ],
+ "source": "Adafruit blog, 17/11/2026; Hackster.io project",
+ "save": "💾 Save for your next tool design",
+ "key": "kp-2026-w48-2-semantic-flow-kp"
+}

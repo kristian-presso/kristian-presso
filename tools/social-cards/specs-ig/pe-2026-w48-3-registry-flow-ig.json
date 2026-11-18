@@ -1,0 +1,18 @@
+{
+ "brand": "pe",
+ "layout": "flow",
+ "kicker": "MCP sprawl",
+ "title": "List every tool your AI can **reach**.",
+ "stages": [
+  {"label": "The problem", "kind": "terminal", "title": "ai-tools", "lines": ["$ which MCP servers exist?", "✗ built, not catalogued", "✗ used, not tracked", "you: who owns this one?"]},
+  {"label": "The fix", "kind": "circle", "title": "One list", "small": "searchable, in one place"},
+  {"label": "Your small version", "kind": "cards", "cards": [
+   {"chip": "1", "text": "Write down every tool your AI can reach."},
+   {"chip": "2", "dark": true, "text": "Put one name next to each."},
+   {"chip": "3", "dashed": true, "dark": true, "text": "Look at the list once a month."}
+  ]}
+ ],
+ "source": "SnapLogic press release, 17/11/2026",
+ "save": "💾 Save this for your monthly check",
+ "key": "pe-2026-w48-3-registry-flow-ig"
+}

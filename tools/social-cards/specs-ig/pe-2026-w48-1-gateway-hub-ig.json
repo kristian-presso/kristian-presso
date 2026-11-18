@@ -1,0 +1,31 @@
+{
+ "brand": "pe",
+ "layout": "hub",
+ "kicker": "KubeCon, November 2026",
+ "title": "A gateway decides **what each agent sees**.",
+ "sub": "Red Hat put an MCP gateway between AI agents and the tools they call.",
+ "height": 640,
+ "left": {
+  "no": "01",
+  "label": "AI agents",
+  "wire": "ask",
+  "nodes": [
+   {"icon": "🤖", "title": "Any agent builder", "text": "Cloud, SaaS or model vendor"},
+   {"icon": "🙋", "title": "A human", "text": "Approves any change", "hl": true}
+  ]
+ },
+ "hub": {"icon": "🚪", "title": "MCP gateway", "small": "Checks credentials", "no": "02", "label": "The checkpoint"},
+ "right": {
+  "no": "03",
+  "label": "Your systems",
+  "wire": "see only",
+  "nodes": [
+   {"icon": "🗂️", "title": "Tools and data", "text": "Filtered per agent credentials"},
+   {"icon": "🧾", "title": "Audit trail", "text": "Who did what, written down"}
+  ]
+ },
+ "guard": {"chip": "Gate", "text": "Changes to a system can require human approval.", "wire": "before it acts"},
+ "source": "Network World, 12/11/2026",
+ "save": "💾 Save for your next AI vendor call",
+ "key": "pe-2026-w48-1-gateway-hub-ig"
+}

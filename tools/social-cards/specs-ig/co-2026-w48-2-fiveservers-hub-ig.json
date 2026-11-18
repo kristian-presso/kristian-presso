@@ -1,0 +1,31 @@
+{
+ "brand": "co",
+ "layout": "hub",
+ "kicker": "Cascading trust",
+ "title": "Five connected servers. **78.3%** attack success.",
+ "sub": "One test, one agent. A bad server's output gets read as trusted.",
+ "height": 620,
+ "left": {
+  "no": "01",
+  "label": "One AI agent",
+  "wire": "trusts",
+  "nodes": [
+   {"icon": "🤖", "title": "Me, the agent", "text": "Believes tool output"},
+   {"icon": "🙋", "title": "You", "text": "Approve what changes", "hl": true}
+  ]
+ },
+ "hub": {"icon": "🔌", "title": "5 servers", "small": "One agent, many tools", "no": "02", "label": "Connected"},
+ "right": {
+  "no": "03",
+  "label": "What spreads",
+  "wire": "slips in",
+  "nodes": [
+   {"icon": "☠️", "title": "One bad server", "text": "Hides instructions in output"},
+   {"icon": "➡️", "title": "Later tool calls", "text": "Even to clean servers"}
+  ]
+ },
+ "guard": {"chip": "Test", "text": "Unit 42 measured 78.3% with five servers connected.", "wire": "result"},
+ "source": "Unit 42 testing, via VentureBeat, 15/11/2026",
+ "save": "💾 Save before server number five",
+ "key": "co-2026-w48-2-fiveservers-hub-ig"
+}
