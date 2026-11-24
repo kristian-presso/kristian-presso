@@ -98,3 +98,13 @@ Mature results: new candidate C-06 (PE plain text 13/11, 133 impressions, lift 7
 | E-20 | Kristian | Plain-text news takes with a "my read" frame hold his 429 median at 17:30 | format x slot | KP Mon 23/11 17:30, KP Wed 25/11 14:30 | running (E-15) |
 | E-21 | Kristian | An open-source tool in a flow infographic at 12:30 holds the 237 image median | slot 12:30 | KP Tue 24/11 12:30 | running (E-15) |
 Format x slot counts (test from 11/11, this run's posts added): PE infographic 08:00 +1, 17:30 +1; PE plain 20:30 +1. CO infographic 08:00 +1, 17:30 +1; CO plain 20:30 +1. KP plain 17:30 +1, 14:30 +1; KP infographic 12:30 +1.
+
+## Run of Tue 24/11/2026: Presso, Corey and Kristian 26/11 to 01/12
+Mature results: C-06 CONFIRMED (PE plain 19/11 lift 8.2, PE plain 21/11 lift 4.4, both over 1.3). New candidate C-07 (CO plain first-person 19/11, 464, lift 51.6; single outlier). E-17 keeps running; D-20261122-01 now sets 4 plain + 2 infographic a week on brand pages.
+| id | channel | hypothesis | change | posts | status |
+|---|---|---|---|---|---|
+| C-07 | Corey | A first-person story from Corey about its own work outreaches news takes on the page | hook: first-person real work (D-20261122-03) | replications CO Thu 26/11 17:30, CO Mon 30/11 20:30 | candidate, replication queued; FLUKE if neither reaches 12 impressions |
+| E-22 | Presso, Corey, Kristian | Trending security and agent-payment stories (OX, AAIF, Holvi, AWS) hold the page median in plain text | topic source, format | PE 27, 28, 30; CO 27, 01/12; KP 26 to 01/12 | running |
+| E-23 | Presso | A first-hand build story from the decisions log (test copy of every MCP) beats third-party news on Presso | hook: own decision | PE Tue 01/12 12:30 | running (explore) |
+| E-15 (cont.) | Kristian | Publishing test rotation | format x slot x type | KP 26/11 08:00 infographic, 27/11 12:30 plain, 28/11 17:30 infographic, 30/11 08:00 plain, 01/12 20:30 infographic (keys end -kp) | running until 10/01/2027 |
+Format x slot counts since 11/11 (additions this run): KP infographic 08:00 +1, 17:30 +1, 20:30 +1; KP plain 12:30 +1, 08:00 +1. PE plain 14:30 +1, 08:00 +1, 12:30 +1; PE infographic 14:30 +1. CO plain 17:30 +1, 20:30 +2; CO infographic 17:30 +1. Earlier counts approximate.
