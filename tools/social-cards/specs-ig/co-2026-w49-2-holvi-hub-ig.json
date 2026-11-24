@@ -1,0 +1,57 @@
+{
+ "brand": "co",
+ "layout": "hub",
+ "kicker": "Holvi, 18/11/2026",
+ "title": "Look first. **Then act.**",
+ "sub": "Holvi opened its accounts to AI through MCP, read-only at launch.",
+ "height": 620,
+ "left": {
+  "no": "01",
+  "label": "You and your AI",
+  "wire": "asks",
+  "nodes": [
+   {
+    "icon": "🙋",
+    "title": "You",
+    "text": "Disconnect with one click"
+   },
+   {
+    "icon": "🤖",
+    "title": "Claude or ChatGPT",
+    "text": "Asks about your money"
+   }
+  ]
+ },
+ "hub": {
+  "icon": "🏦",
+  "title": "Holvi MCP server",
+  "small": "read-only at launch",
+  "no": "02",
+  "label": "The bank's door"
+ },
+ "right": {
+  "no": "03",
+  "label": "What it can reach",
+  "wire": "reads",
+  "nodes": [
+   {
+    "icon": "💷",
+    "title": "Balances and income",
+    "text": "Questions in plain words"
+   },
+   {
+    "icon": "🧾",
+    "title": "Expenses",
+    "text": "No more spreadsheet exports"
+   }
+  ]
+ },
+ "guard": {
+  "chip": "Gate",
+  "text": "Payments come later, and you confirm each one in the bank's app.",
+  "wire": "before money moves"
+ },
+ "source": "Holvi, 18/11/2026",
+ "save": "💾 Save for your next connector",
+ "key": "co-2026-w49-2-holvi-hub-ig"
+}

@@ -1,0 +1,59 @@
+{
+ "brand": "kp",
+ "layout": "hub",
+ "kicker": "Open source: Strands Box",
+ "title": "YOLO mode, **inside a box**.",
+ "sub": "The agent works freely. The real keys never enter the box.",
+ "height": 620,
+ "left": {
+  "no": "01",
+  "label": "Inside the box",
+  "wire": "acts",
+  "nodes": [
+   {
+    "icon": "🤖",
+    "title": "A coding agent",
+    "text": "Claude Code, Codex or Kiro CLI"
+   },
+   {
+    "icon": "🎟️",
+    "title": "A placeholder key",
+    "text": "Not the real one",
+    "dim": true
+   }
+  ]
+ },
+ "hub": {
+  "icon": "🚧",
+  "title": "Policy check",
+  "small": "outside the model",
+  "no": "02",
+  "label": "Every action passes"
+ },
+ "right": {
+  "no": "03",
+  "label": "Outside the box",
+  "wire": "only if allowed",
+  "nodes": [
+   {
+    "icon": "🔑",
+    "title": "The real keys",
+    "text": "Swapped in as the request leaves",
+    "hl": true
+   },
+   {
+    "icon": "🌐",
+    "title": "Allowed sites and tools",
+    "text": "Everything else is blocked"
+   }
+  ]
+ },
+ "guard": {
+  "chip": "Rule",
+  "text": "The model cannot talk its way past a policy it never sees.",
+  "wire": "enforced by"
+ },
+ "source": "The AI Economy, 23/11/2026; AWS",
+ "save": "💾 Save before you try YOLO mode",
+ "key": "kp-2026-w49-2-box-hub-kp"
+}

@@ -1,0 +1,52 @@
+{
+ "brand": "kp",
+ "layout": "flow",
+ "kicker": "My read: MCP supply chain",
+ "title": "A tool is a **stranger** with a key.",
+ "stages": [
+  {
+   "label": "What OX Security found",
+   "kind": "terminal",
+   "title": "542,207 components scanned",
+   "lines": [
+    "✗ 22% of flagged: injection or poisoning",
+    "✗ 83% of flagged: code unverifiable",
+    "you: flagged is not malicious"
+   ]
+  },
+  {
+   "label": "The question behind it",
+   "kind": "circle",
+   "title": "Who controls the tool?",
+   "small": "and what code does it run"
+  },
+  {
+   "label": "Four checks, in this order",
+   "kind": "cards",
+   "cards": [
+    {
+     "chip": "1",
+     "text": "Who published it?"
+    },
+    {
+     "chip": "2",
+     "dark": true,
+     "text": "Does the code match what I read?"
+    },
+    {
+     "chip": "3",
+     "text": "What can it read and change?"
+    },
+    {
+     "chip": "4",
+     "dashed": true,
+     "dark": true,
+     "text": "What tells me it changed?"
+    }
+   ]
+  }
+ ],
+ "source": "OX Security, Plug and Pray, 23/11/2026",
+ "save": "💾 Save before you connect the next tool",
+ "key": "kp-2026-w48-4-ox-flow-kp"
+}

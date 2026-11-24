@@ -1,0 +1,58 @@
+{
+ "brand": "pe",
+ "layout": "hub",
+ "kicker": "MCP supply chain, Nov 2026",
+ "title": "Who **owns** the tool your agent calls?",
+ "sub": "OX Security could not trace an owner for nearly a third of MCP servers.",
+ "height": 620,
+ "left": {
+  "no": "01",
+  "label": "Your side",
+  "wire": "calls",
+  "nodes": [
+   {
+    "icon": "🤖",
+    "title": "Your AI agent",
+    "text": "Carries your permissions"
+   },
+   {
+    "icon": "🙋",
+    "title": "You",
+    "text": "Chose to connect it"
+   }
+  ]
+ },
+ "hub": {
+  "icon": "🔌",
+  "title": "MCP server",
+  "small": "who published it?",
+  "no": "02",
+  "label": "The unknown"
+ },
+ "right": {
+  "no": "03",
+  "label": "What you can check",
+  "wire": "if you ask",
+  "nodes": [
+   {
+    "icon": "🪪",
+    "title": "A named owner",
+    "text": "Found for 69.8% of servers"
+   },
+   {
+    "icon": "🔍",
+    "title": "Code that matches",
+    "text": "Unverifiable for 83% of flagged ones",
+    "hl": true
+   }
+  ]
+ },
+ "guard": {
+  "chip": "Gate",
+  "text": "No traceable owner, no connection.",
+  "wire": "before it connects"
+ },
+ "source": "OX Security, Plug and Pray, 23/11/2026",
+ "save": "💾 Save for your next tool audit",
+ "key": "pe-2026-w49-1-ox-hub-ig"
+}

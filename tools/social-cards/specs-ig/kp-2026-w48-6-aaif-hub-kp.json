@@ -1,0 +1,58 @@
+{
+ "brand": "kp",
+ "layout": "hub",
+ "kicker": "My read: agent payments",
+ "title": "Agents that spend need **an owner**.",
+ "sub": "138 million agent payments so far, mostly small. The rules are being written now.",
+ "height": 620,
+ "left": {
+  "no": "01",
+  "label": "The agent",
+  "wire": "asks to pay",
+  "nodes": [
+   {
+    "icon": "🤖",
+    "title": "An AI agent",
+    "text": "Wants to buy data or compute"
+   },
+   {
+    "icon": "🙋",
+    "title": "The customer",
+    "text": "Approved it, provably",
+    "hl": true
+   }
+  ]
+ },
+ "hub": {
+  "icon": "🪪",
+  "title": "Three rules",
+  "small": "identity, limits, stop",
+  "no": "02",
+  "label": "The new rules"
+ },
+ "right": {
+  "no": "03",
+  "label": "The bank or merchant",
+  "wire": "can check",
+  "nodes": [
+   {
+    "icon": "🏦",
+    "title": "Who is behind it?",
+    "text": "Identity checks"
+   },
+   {
+    "icon": "🛑",
+    "title": "Emergency controls",
+    "text": "A way to stop it fast"
+   }
+  ]
+ },
+ "guard": {
+  "chip": "Gate",
+  "text": "Spending limits are set before the first payment.",
+  "wire": "before it pays"
+ },
+ "source": "CoinDesk, 21/11/2026; Chainalysis",
+ "save": "💾 Save for your next agent rollout",
+ "key": "kp-2026-w48-6-aaif-hub-kp"
+}
