@@ -1,0 +1,8 @@
+# Trends, Wed 25/11/2026 (sources read, both returned 200)
+
+1. MCP turns two: Skills over MCP (public beta), Tasks and Elicitation (generally available), File Uploads (rolling out soon). Anthropic, 24/11/2026: https://claude.com/resources/articles/skills-over-mcp-tasks-and-more ; cross-check The Decoder, 24/11/2026: https://the-decoder.com/anthropic-tops-700-million-monthly-mcp-sdk-downloads-and-expands-the-protocol-for-more-autonomous-ai-agents/
+   Facts we may use: Elicitation lets a server pause and ask the user for input (examples: Supabase confirms costs before a paid project and before destructive SQL; Railway asks before removing a service; GitHub has users enter the repository name before an agent deletes it). Skills over MCP: servers publish skills with their tools, loaded only when needed, updated with the server; examples Shopify (design and update a store end to end), Atlassian (organisational context). Also: 700 million monthly SDK downloads, over 10,000 MCP connectors for Claude, tool search can cut tool-definition context by over 85% in multi-server setups.
+   Angles: KP 'my read' ask-before-acting check (plain). CO handover notes for solo founders (plain). PE our read-back before publishing in Presso Events and the nothing-is-MCP-only rule (plain).
+   Not used yet (for later runs, different channels or 28 days on): Tasks (background jobs), 700M downloads, tool search 85%.
+2. Seen, not read fully: Anthropic's Claude Ship (23/11/2026), AWS Marketplace agents buying software (Fortune, 19/11/2026). Candidates for Sunday.
+Niche resonance study not run (Wednesday firing).
